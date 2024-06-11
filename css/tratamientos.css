@@ -1,0 +1,295 @@
+.parallax_tratamientos{
+  width: 100%;
+  position: relative;
+
+  
+}
+.container-slider {
+    padding: 0 60px;
+}
+.parallax_tratamientos img{
+    max-width: 100%;
+}
+.section_texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.section_texto p{
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  text-align:center;
+}
+
+.parallax_tratamientos_dos{
+    background-image: url(../imagenes/parallax_dos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax_tratamientos_dos p{
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 30px;
+   
+}
+.servicios_dos{
+    width: 100%;
+    background-color: #f6f6f6;
+    margin:100px auto;
+    position:  relative;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor_card_dos{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: 100px auto auto auto;
+    z-index: 999;
+   
+
+}
+.item_card_dos{
+    width: 100%;
+    height: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+.card_image_dos{
+    position: relative;
+}
+.card_image_dos::before{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    background-color: #1161a0;
+    transition: all 0.5s;
+}
+.card_image_dos:hover::before{
+    width: 100%;
+    left: 0;
+}
+.casos- {
+    font-size: 30px;
+}
+.item_card_dos:hover{
+    transform: scale(0.9);
+    box-shadow: 15px 15px 15px rgba(0,0,0,.5);
+    transition: 0.5s;
+}
+.item_card_dos ul li{
+    color: #1161a0;
+    text-align: justify;
+   margin: 10px auto 10px 10px;
+  
+}
+.item_card_dos ul li a{
+   text-decoration: none;
+   color: #1161a0;
+   font-size: 18px;
+   text-align: justify;
+   
+}
+
+  
+.card_image_dos h2{
+    color: #1161a0;
+    font-size: 22px;
+}
+.card_image_dos img{
+    max-width: 30%;
+}
+
+@media (max-width:1099px){
+
+   
+    .parallax_tratamientos_dos{
+        background-image: url(../imagenes/parallax_dos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parallax_tratamientos_dos p{
+        color: #fff;
+        font-size: 20px;
+        text-align: justify;
+        padding: 0px 20px;
+       
+    }
+}
+@media (max-width:767px){
+  .parallax_tratamientos{
+  width: 100%;
+  position: relative;
+    margin-top:70px;
+
+  
+}
+    .section_texto p{
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .texto_tratamientos {
+        text-align: center;
+    }
+    
+    .card_image_dos img{
+        max-width: 32%;
+    }
+   
+    .parallax_tratamientos_dos{
+        background-image: url(../imagenes/parallax_dos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parallax_tratamientos_dos p{
+        color: #fff;
+        font-size: 17px;
+        text-align: justify;
+        padding: 0px 20px;
+       
+    }
+    .servicios_dos{
+        width: 100%;
+        background-color: #f6f6f6;
+        margin: auto;
+        position:  relative;
+        text-align: center;
+    
+    }
+    .contenedor_card_dos{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin:  auto;
+        z-index: 999;
+      grid-gap:30px;
+       padding: 30px 0px;
+      
+       
+    
+    }
+    .item_card_dos{
+        width: 100%;
+        height: 370px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 15px;
+        transition: 0.5s;
+        padding:30px auto;
+    
+    }
+    .card_image_dos{
+        position: relative;
+    }
+    .card_image_dos::before{
+        content: " ";
+        display: block;
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        background-color: #1161a0;
+        transition: all 0.5s;
+    }
+    .card_image_dos:hover::before{
+        width: 100%;
+        left: 0;
+    }
+    .item_card_dos:hover{
+        transform: scale(0.9);
+        box-shadow: 15px 15px 15px rgba(0,0,0,.5);
+        transition: 0.5s;
+    }
+    .item_card_dos ul li{
+       list-style: none;
+       margin: 10px auto;
+    }
+    .item_card_dos ul li a{
+       text-decoration: none;
+       color: #1161a0;
+       font-size: 18px;
+       
+    }
+    
+      
+    .card_image_dos h2{
+        color: #1161a0;
+        font-size: 22px;
+    }
+    .container-slider {
+        padding: 0 2em;
+    }
+}
+@media (max-width:380px){
+    .parallax_tratamientos{
+        margin-top: 70px;
+    }
+  .section_texto p{
+      text-align: center;
+  }
+   
+    .parallax_tratamientos_dos{
+        background-image: url(../imagenes/parallax_dos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parallax_tratamientos_dos p{
+        color: #fff;
+        font-size: 17px;
+        text-align: justify;
+        padding: 0px 20px;
+       
+    }
+}

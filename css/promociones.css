@@ -1,0 +1,347 @@
+.contenedor_banner {
+  padding-top: 50px;
+  text-align: center;
+}
+.contenedor_banner img {
+  max-width: 100%;
+}
+.container_promos {
+  width: 100%;
+  margin: 40px auto auto auto;
+}
+.container_texto {
+  display: none;
+}
+
+.container_promos h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+}
+.promociones_item {
+  width: 90%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 
+  minmax(300px, 400px));
+  margin: auto;
+  grid-gap: 40px;
+  justify-content: center;
+}
+.item_promocion img {
+  max-width: 100%;
+  border: solid #1161a0 2px;
+}
+.item_promocion a {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  background-color: #781658;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+.item_promocion a:hover {
+  background-color: #e4bad4;
+  color: #781658;
+  border: solid 1px #781658;
+  font-weight: bold;
+  transition: 0.3s;
+}
+h2 {
+  text-align: center;
+  color: #1161a0;
+  font-size: 22px;
+}
+.galeria_trabajo {
+  width: 100%;
+  padding-top: 20px;
+}
+.galeria_trabajo h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+}
+.container_trabajo {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  text-align: center;
+  margin: 15px auto;
+}
+.container_trabajo img {
+  max-width: 100%;
+  height: auto;
+}
+.location-listing {
+  position: relative;
+}
+.container_todo:nth-child(10) {
+  display: none;
+}
+.location-title {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+
+  transition: 1s;
+
+  /* typographic styles */
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+
+  /* position the text centrally*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(120, 22, 80);
+}
+.location-listing:hover .location-title {
+  transform: scale(1);
+  transition: 1s;
+}
+
+.location-title h2 {
+  font-size: 25px;
+  color: blanchedalmond;
+}
+.location-title p {
+  font-size: 16px;
+  text-align: justify;
+  padding: 15px;
+}
+.location-image {
+  line-height: 0;
+}
+.location-img a img {
+  max-width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.btn_modal {
+  display: none;
+  border: none;
+  background: #1161a0;
+  margin: 10px auto;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100px;
+  font-size: 16px;
+  font-family: "Bebas Neue", cursive;
+  text-transform: capitalize;
+}
+.metodos_de_pago {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
+}
+.metodos_de_pago h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+}
+.metodos_de_pago img {
+  margin: 10px auto;
+}
+
+.agenda {
+  width: 100%;
+  background-color: #781658;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+.item_agenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item_agenda:nth-child(1) {
+  padding: 20px 0px 20px 70px;
+  color: #fff;
+}
+.item_agenda:nth-child(1) h3 {
+  font-size: 28px;
+  font-weight: 900;
+}
+.item_agenda:nth-child(1) p {
+  text-align: justify;
+}
+.item_agenda:nth-child(2) a {
+  background-color: #1161a0;
+  display: block;
+  width: 210px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  animation: parpadeo 3s infinite;
+}
+@keyframes parpadeo {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .container_texto {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+  }
+
+  .move {
+    transform: translateX(0);
+  }
+  #cierro {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: blanchedalmond;
+    font-size: 40px;
+  }
+  .copy {
+    position: absolute;
+    top: 30vh;
+    bottom: 30vh;
+    left: 5%;
+    background: #781658;
+    width: 90%;
+    height: 40%;
+    border-radius: 20px;
+    padding: 20px;
+    transform: scale(0);
+    transition: transform 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aparecer_texto {
+    transform: scale(1);
+    transition: transform 2s;
+  }
+  .copy h2 {
+    color: blanchedalmond;
+    font-size: 18px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .copy p {
+    color: #fff;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  .btn_modal {
+    display: block;
+  }
+  .container_promos {
+    width: 100%;
+    margin: 10px auto auto auto;
+  }
+  .metodos_de_pago h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Bebas Neue", cursive;
+  }
+  .promociones_item {
+    width: 90%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+  .container_promos h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Bebas Neue", cursive;
+  }
+  .galeria_trabajo h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Bebas Neue", cursive;
+  }
+  .container_trabajo {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-gap: 1em;
+    text-align: center;
+    margin: 15px auto;
+  }
+  .location-title {
+    display: none;
+    font-size: 15px;
+  }
+  .container_todo:nth-child(10) {
+    display: block;
+  }
+  .metodos_de_pago {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: -30px;
+  }
+  .item_promocion a {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #781658;
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+  .agenda {
+    width: 100%;
+    background-color: #781658;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+  }
+  .item_agenda:nth-child(1) {
+    padding: 20px 15px 20px 15px;
+  }
+  .item_agenda:nth-child(1) h3 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .item_agenda:nth-child(1) p {
+    text-align: justify;
+  }
+}

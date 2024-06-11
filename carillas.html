@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Somos una clínica dental compuesta por un equipo interdisciplinario que trabaja de forma coordinada para conseguir el mejor resultado de cada tratamiento."
+  />
+  <meta
+    name="keywords"
+    content="Orthodentic es una clínica dental que reúne todas las especialidades dentales con una trayectoria de 20 años en las cuales los diferentes especialistas se han capacitado en las mejores universidades de México para ofrecerte un servicio de alta calidad y efectividad.
+  Nosotros buscamos que nuestros pacientes tengan un ambiente muy cómodo y un trato siempre cálido y profesional."
+  />
+  <title>Orthodentic</title>
+  <link rel="icon" href="imagenes/favicon_ortodenthic.png" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/carillas.css" />
+  <link rel="stylesheet" href="aos/aos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "984743879091425");
+    fbq("track", "PageView");
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=984743879091425&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11323798161"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11323798161');
+  gtag('config', 'G-CKFC2MQBLE');
+  gtag('event', 'conversion', {'send_to': 'AW-11323798161/K8BLCKqc3uMYEJHlzZcq'});
+</script>
+  <!-- Conversion de WhatsApp -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url != "undefined") {
+          window.location = url;
+        }
+      };
+      gtag("event", "conversion", {
+        send_to: "AW-10801939249/LgdYCOagp6MDELGG4p4o",
+        event_callback: callback,
+      });
+      return false;
+    }
+  </script>
+  <!-- Fin de conversion de WhatsApp -->
+  <!-- Event snippet for Doctoralia conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url != "undefined") {
+          window.location = url;
+        }
+      };
+      gtag("event", "conversion", {
+        send_to: "AW-10801939249/d2nXCIPoz5IYELGG4p4o",
+        event_callback: callback,
+      });
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="imagenes/logo_ortodenthic.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
+      <img src="imagenes/logo_blanco.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
+      <ul class="menu">
+        <li><a href="index.html" data-section="home" data-value="ancla_uno">Inicio</a></li>
+        <li><a
+            href="promociones.html"
+            data-section="home"
+            data-value="ancla_dos"
+            >Promociones</a
+          >
+        </li>
+        <li>
+          <a
+            href="carillas.html"
+            data-section="home"
+            data-value="ancla_dos"
+            >Carillas
+          </a>
+        </li>
+        <li>
+          <a href="servicios.html" data-section="home" data-value="ancla_tres"
+            >Servicios</a
+          >
+        </li>
+        <li>
+          <a
+            href="tratamientos.html"
+            data-section="home"
+            data-value="ancla_cuatro"
+            >Tratamientos
+          </a>
+        </li>
+        <li>
+          <a href="contacto.html" data-section="home" data-value="ancla_cinco"
+            >Contacto</a
+          >
+        </li>
+        <div id="flags" class="flags">
+          <div class="flags_item" data-language="es" id="es">
+            <a href="index.html" aria-label="Cambiar idioma a español"><img src="imagenes/mexico.png" alt="Bandera de México" /></a>
+          </div>
+          <div class="flags_item" data-language="en">
+            <a href="./english/index.html">
+              <img
+                src="imagenes/estados-unidos-de-america.png"
+                alt="Bandera de Estados Unidos de América"
+                id="en"
+            /></a>
+          </div>
+        </div>
+      </ul>
+      <i class="fas fa-bars abrirmenu"></i>
+    </nav>
+  </header>
+  <section class="container-carillas">
+    <div class="video">
+      <video src="video/bg-carillas-1.mp4" muted autoplay loop width="100%"></video>
+      <div class="txt">
+        Carillas Dentales
+      </div>
+    </div>
+    <div class="video-mov">
+      <video src="video/bg-carillas-mov.mp4" muted autoplay loop width="100%" height="80%"></video>
+      <div class="txt">
+        Carillas Dentales
+      </div>
+    </div>
+    <div class="title-carillas">
+      <h2>¿Qué son las carillas dentales?</h2>
+    </div>
+    <div class="carillas">
+      <p>
+        Las carillas dentales son una posible solución para ayudarlo a lograr el aspecto que desea. 
+        Son una opción popular para aquellos con dientes astillados, un espacio entre los dientes o 
+        dientes deformados. Las carillas dentales son cubiertas delgadas que se adhieren a los dientes 
+        para darles un aspecto más clásico.
+        Estas pueden estar hechas de porcelana o de materiales compuestos de resina. Las carillas de 
+        porcelana resisten mejor las manchas que las carillas de resina. También imitan mejor las propiedades 
+        reflectantes de la luz de los dientes naturales. Deberá discutir nuestro dentista cuál es la mejor 
+        opción de material de revestimiento para usted.
+      </p>
+    </div>
+    <div class="carillas-1">
+      <div class="tipos-carillas">
+        <h2>¿Cuántos tipos de carillas trabajamos en OrthoDentic?</h2>
+        <h3>Trabajamos dos tipos de carillas: porcelana y composite a base de resina.</h3>
+      </div>
+      <div class="grid-carillas">
+        <div class="item-carillas">
+          <img src="imagenes/carillas/carilla-dental.webp" alt="Imagotipo de carillas dentales">
+          <h3>Carillas de Porcelana</h3>
+          <p>Las carillas de porcelana son una tapa delgada y resistente que el dentista puede colocar en 
+            la parte superior y los lados de los dientes. Para colocarlos, el dentista quitará un poco de 
+            esmalte del diente antes de colocarlos. Las carillas de porcelana tienen el mismo color que los 
+            dientes naturales, pero es posible hacerlas más blancas para alegrar la sonrisa.</p>
+        </div>
+        <div class="item-carillas">
+          <img src="imagenes/carillas/carilla-dental.webp" alt="Imagotipo de carillas dentales">
+          <h3>Carillas de Composite</h3>
+          <p>Las carillas de resina compuesta son similares a las de porcelana, pero tienden a ser menos 
+            costosas y requieren menos remoción de esmalte. A veces, es posible que no se tenga 
+            que quitar el esmalte antes de colocar la carilla compuesta. Las carillas compuestas suelen ser 
+            más fáciles de reemplazar si están rotas o dañadas que las carillas de porcelana.</p>
+        </div>
+      </div>
+      <h2 class="h2-carillas" style="margin-top: 30px;">¿Para qué me sirven las carillas dentales?</h2>
+      <div class="carillas">
+        <p>
+          Las carillas se utilizan habitualmente para reparar:
+        </p>
+        <ul>
+          <li>Dientes que se decoloran debido a: tratamiento de conducto, manchas de tetraciclina u otras drogas, fluoruro excesivo, grandes empastes de resina, otras causas.</li>
+          <li>Dientes que están desgastados</li>
+          <li>Dientes que están astillados o rotos</li>
+          <li>Dientes desalineados, desiguales o de forma irregular (por ejemplo, tienen cráteres o protuberancias)</li>
+          <li>Dientes con espacios entre ellos (para cerrar el espacio entre estos dientes)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="title-carillas">
+      <h2>Promociones</h2>
+    </div> 
+    <div style="width: -webkit-fill-available; display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+      <img class="promo-mov" src="imagenes/promociones/promo-1.webp" alt="" />
+    </div>
+  </section>
+  <div class="container-slider" style="margin-top: 50px;">
+    <h2>Casos clínicos</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/1.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/2.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/3.webp" alt="Caso de éxito carillas dentales" />
+          <img style="margin-top: 35px;" src="imagenes/carillas/casos/5.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/4.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/6.webp" alt="Caso de éxito carillas dentales" />
+          <img style="margin-top: 35px;" src="imagenes/carillas/casos/7.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+        <div class="swiper-slide">
+          <img src="imagenes/carillas/casos/8.webp" alt="Caso de éxito carillas dentales" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+  </div>
+  <div class="agenda">
+    <div class="item_agenda">
+      <h3>Agenda tu cita en Orthodentic®</h3>
+      <p>
+        Porque una boca sana es una boca sin filtros. Ven a Orthodentic® y
+        conoce todos los tratamientos que tenemos para mejorar tu estética
+        dental y cuidar tu salud bucal.
+      </p>
+    </div>
+    <div class="item_agenda">
+      <a
+        href="https://api.whatsapp.com/send?phone=528115383937"
+        target="_blank"
+        >Agendar una cita <i class="fas fa-long-arrow-alt-right"></i
+      ></a>
+    </div>
+  </div>
+  <div class="redes_flotantes">
+    <img src="imagenes/icono_principal.png" alt="Icono principal" class="icono_principal" />
+    <div class="contacto">
+      <p>¡Da Click y contáctanos!</p>
+    </div>
+
+    <div class="contactos">
+      <a
+        onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=52811538393');"
+        href="https://api.whatsapp.com/send?phone=528115383937"
+        class="icono_dos"
+        target="_blank"
+        ><img src="imagenes/whats.png" alt="Logo de WhatsApp"
+      /></a>
+      <div class="contact_uno">
+        <p>WhatsApp</p>
+      </div>
+      <a
+        onclick="return gtag_report_conversion('tel:811-538-3937');"
+        href="tel:8115383937 "
+        class="icono_dos"
+        target="_blank"
+        ><img src="imagenes/phone.png" alt="Icono de teléfono"
+      /></a>
+      <div class="contact_dos">
+        <p>Teléfono</p>
+      </div>
+      <a
+        onclick="return gtag_report_conversion('https://www.doctoralia.com.mx/z/pxcxGG');"
+        href="https://www.doctoralia.com.mx/z/pxcxGG"
+        target="_blank"
+      >
+        <img src="imagenes/Icono_doctoralia.png" alt="Logo de doctoralia"
+      /></a>
+      <div class="contact_tres">
+        <p>Doctoralia</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider_marcas_dos">
+    <div class="efecto_uno">
+      <h2>Trabajamos con Marcas de Calidad</h2>
+    </div>
+
+    <section class="customer-logos slider">
+      <div class="slide"><img src="imagenes/american.png" /></div>
+      <div class="slide"><img src="imagenes/activos_dos.png" /></div>
+      <div class="slide"><img src="imagenes/activos_tres.png" /></div>
+      <div class="slide"><img src="imagenes/ormco.png" /></div>
+      <div class="slide"><img src="imagenes/activos_dos.png" /></div>
+      <div class="slide"><img src="imagenes/american.png" /></div>
+      <div class="slide"><img src="imagenes/activos_tres.png" /></div>
+      <div class="slide"><img src="imagenes/dentsply.png" /></div>
+      <div class="slide"><img src="imagenes/nsk.png" /></div>
+      <div class="slide"><img src="imagenes/activos_dos.png" /></div>
+      <div class="slide"><img src="imagenes/activos_tres.png" /></div>
+      <div class="slide"><img src="imagenes/nsk.png" /></div>
+      <div class="slide"><img src="imagenes/dentsply.png" /></div>
+      <div class="slide"><img src="imagenes/activos_dos.png" /></div>
+      <div class="slide"><img src="imagenes/corix.png" /></div>
+    </section>
+  </div>
+  <section class="seguros">
+    <div class="item_seguros">
+      <h2>Los seguros que manejamos</h2>
+    </div>
+    <div class="item_seguros">
+      <div
+        class="sub_item_seguros"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <figure class="img_seguro">
+          <img src="imagenes/dentegra.png" alt="Logo seguro Dentegra" />
+        </figure>
+
+        <div class="card_body">
+          <h4>Dentegra</h4>
+          <p>
+            Seguros Dentegra cuida tu salud dental, dependiendo del plan
+            contratado tendrás diversos beneficios.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sub_item_seguros"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <figure class="img_seguro">
+          <img src="imagenes/centauro.png" alt="" />
+        </figure>
+        <div class="card_body">
+          <h4>Centauro</h4>
+          <p>
+            Para Seguros Centauro lo más importante es tu salud, por ello
+            ofrece excelentes planes para tu bienestar dental.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sub_item_seguros"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <figure class="img_seguro">
+          <img src="imagenes/todos_seguros.png" alt="" />
+        </figure>
+        <div class="card_body">
+          <h4>Entre otros</h4>
+          <p>
+            De igual manera, contamos con convenios con otras aseguradoras,
+            acércate y pregunta si tu póliza es valida con nosotros.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonios">
+    <div class="item_testimonios">
+      <h2>¿Cómo te podemos ayudar?</h2>
+      <form action="correo.php" method="post">
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre Completo"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Correo Electrónico"
+        />
+        <input type="tel" id="tel" name="tel" placeholder="Télefono" />
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" />
+        <textarea
+          name="mensaje"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Cuéntanos acerca de tu problema dental"
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="item_testimonios">
+      <div class="swiper mySwiper-2" style="height: auto !important">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Lupita Morales</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>26 de septiembre de 2023</span>
+                <p>
+                  excelente trato y servicio en todo momento, siempre atenta a
+                  tu sentir y a lo que necesitas la super recomiendo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Antonio Martinez</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>22 de septiembre de 2023</span>
+                <p>
+                  Excelente muy bien explicado el diagnóstico y valoración
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Marcela Botello</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>28 de agosto de 2023</span>
+                <p>
+                  Excelente trato , muy detallada al explicar y con empatía
+                  hacía la situación. Muy grata experiencia y con confianza en
+                  el tratamiento a seguir.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Adela Garza</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>4 de agosto de 2023</sp>
+                <p>
+                  Excelente Doctora, muy cuidadosa y muy detallista en el
+                  procedimiento, me explicó de manera sencilla y clara mi
+                  situación.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Ramiro Sanchez Reyes</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>29 de julio de 2023</s>
+                <p>
+                  Excelente trato y explicaciones profesionales de la Doctora
+                  Monica, sin duda una profesional de la odontología.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Aby</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>19 de julio de 2023</span>
+                <p>
+                  Fui a realizarme un curetaje y le agradezco mucho la
+                  atención, la amabilidad y profesionalismo a la Dra., siempre
+                  atenta y brinda explicaciones muy claras. Hasta ahora todo
+                  va muy bien y ya no presento sangrado de encías, muchas
+                  gracias Dra. Mónica!! :)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Marce Nicanor</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>11 de julio de 2023</span>
+                <p>
+                  Muy buena atención , me gusta que mandan el presupuesto
+                  detallado y te explican cada tratamiento que van a
+                  realizarte .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sub_item_testimonios">
+              <span>Marijose</span>
+              <div class="estrellas">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="card_footer">
+                <span>24 de junio de 2023</span>
+                <p>
+                  Acudimos por primera ocasión y nos llevamos una muy grata
+                  experiencia. La doctora fue muy profesional y logró
+                  ofrecerle a mi hijo confianza y un mejor enfoque sobre el
+                  cuidado bucal. Estamos entusiasmados por el tratamiento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next btn-compu"></div>
+        <div class="swiper-button-prev btn-compu"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--<div
+        class="sub_item_testimonios"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <img src="imagenes/foto_perfil_2.jpg" alt="" />
+
+        <h5>Adrián Berlanga</h5>
+
+        <div class="estrellas">
+          <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="card_footer">
+          <h6>5 de Enero del 2022</h6>
+          <p>
+            Buen trato, examinación y explicación a detalle, profesionalismo y
+            compromiso con el trabajo, abierto/a a responder mis dudas y buen
+            comportamiento.
+          </p>
+        </div>
+      </div>
+      <div
+        class="sub_item_testimonios"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <img src="imagenes/foto_perfil_3.jpg" alt="" />
+        <h5>Abigail Pérez</h5>
+        <div class="estrellas">
+          <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h6>8 de diciembre del 2021</h6>
+
+        <p>
+          Explicaciones super claras del tratamiento necesario, la doctora muy
+          empática y todo el personal muy amables.
+        </p>
+      </div>
+      <div
+        class="sub_item_testimonios"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <img src="imagenes/foto_perfil.jpg" alt="" />
+        <h5>Javier González</h5>
+        <div class="estrellas">
+          <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h6>11 de noviembre 2021</h6>
+        <p>
+          Fue una experiencia grata, la atención de la doctora fue
+          profesional, hizo muy buen trabajo y diagnóstico ante posibles
+          problemas dentales
+        </p>
+      </div>
+      <div
+        class="sub_item_testimonios"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <img src="imagenes/foto_perfil_4.jpg" alt="" />
+        <h5>Gabriela Arriaga</h5>
+
+        <div class="estrellas">
+          <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h6>21 de octubre de 2021</h6>
+
+        <p>
+          Excelente atención al cliente, cuidan cada detalle y seguimiento de
+          tu tratamiento, te explican con detalle y toman las medidas de
+          seguridad sanitarias COVID-19
+        </p>
+      </div>-->
+      <a
+        target="_blank"
+        href="https://www.doctoralia.com.mx/monica-bridgette-guerrero-martinez/dentista-odontologo/san-nicolas-de-los-garza?utm_campaign=94969&utm_medium=link&utm_source=widget&utm_term=facebook-profile-link#profile-reviews"
+      >
+        Ver más
+      </a>
+    </div>
+  </section>
+  <footer>
+    <div class="item_footer">
+      <div class="sub_item_footer">
+        <div class="efecto uno">
+          <h3>Ubicación</h3>
+        </div>
+        <ul>
+          <li><a href="#">Dra. Mónica Guerrero Martinez </a></li>
+          <li>
+            <a href="#"
+              >Avenida Juan Pablo II #245 colonia Residencial las puentes. San
+              Nicolas de los Garza Plaza Las Puentes local #37</a
+            >
+          </li>
+          <li><a href="tel:8115383937">Teléfono: (81) 15383937 </a></li>
+          <li>
+            <a href="mailto:info@clinicadentalorthodentic.com">
+              Email: info@clinicadentalorthodentic.com
+            </a>
+          </li>
+          <li>
+            <a href="download/Aviso de privacidad_orthodentic.pdf">
+              Aviso de Privacidad</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sub_item_footer">
+        <div class="efecto dos">
+          <h3>Horario</h3>
+        </div>
+        <ul>
+          <li><a href="#">Lunes-Viernes: 9AM-1PM y 3PM-8PM </a></li>
+          <li><a href="#">Sábado: 9AM-1PM</a></li>
+          <li><a href="#"> Pagos con Tarjeta </a></li>
+          <li>
+            <a href="#">
+              <img src="imagenes/pagos_tarjeta.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub_item_footer">
+        <div class="efecto tres">
+          <h3>Redes Sociales</h3>
+        </div>
+        <ul class="menu_redes">
+          <li>
+            <a href="https://www.facebook.com/orthodentic" target="_blank"
+              ><img src="imagenes/icon_facebook.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/orthodentic?utm_medium=copy_link"
+              target="_blank"
+              ><img src="imagenes/icon_instagram.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item_footer">
+      <p>
+        OrthoDentic.com <span id="anio">2021</span> © | Página Desarrollada por
+        <a href="https://dentarios.com.mx/programacion.php"
+          >Agencia de Marketing Dentarios ©
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/slider.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/year.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".customer-logos").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+        ],
+      });
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper-testimonios.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
