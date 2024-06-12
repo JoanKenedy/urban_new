@@ -272,13 +272,19 @@ nav i {
   color: #fff;
   font-size: 18px;
 }
+.redes_flotantes {
+  width: 100%;
+}
 .icono_principal {
   position: fixed;
   bottom: 4vh;
-  right: 1em;
+  right: 15px;
   z-index: 5;
   animation: pulse 2s infinite;
   border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
 }
 
 @keyframes pulse {
@@ -302,8 +308,8 @@ nav i {
   -ms-transform: translateY(100%);
   transform: translateY(100%);
   position: fixed;
-  bottom: 28vh;
-  right: 2rem;
+  bottom: 10vh;
+  right: 22px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -319,8 +325,8 @@ nav i {
 }
 .aparecer {
   position: fixed;
-  bottom: 22vh;
-  right: 2rem;
+  bottom: 14vh;
+  right: 22px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -330,6 +336,11 @@ nav i {
   transform: translateY(0);
   visibility: visible;
   z-index: 1;
+}
+.contactos img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
 }
 .slide_contenedor {
   max-width: 100%;
@@ -384,16 +395,60 @@ nav i {
 }
 .doctores {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .doctores h2 {
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: -20px;
 }
+/*especialidades*/
+.especialidades {
+  width: 90%;
+  margin: 25px auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.item-especialidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: #0082c9;
+  width: 100%;
+  padding: 40px 20px;
+  gap: 10px;
+}
+.item-especialidades h3 {
+  color: white;
+  font-size: 20px;
+}
+.item-especialidades a {
+  display: block;
+  width: 200px;
+  background-color: #444444;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+.div_image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div_image img {
+  max-width: 50%;
+}
+/*especialidades*/
 .card_nosotros {
   border-radius: 20px;
   background-color: #002c89;
@@ -787,12 +842,12 @@ nav i {
   transition: 0.3s;
 }
 .parallax_dos {
-  background-image: url(../imagenes/parallax.png);
+  background-image: url(../imagenes/parallax.webp);
   background-position: center;
   width: 100%;
   height: 450px;
   margin-top: 20px;
-  background-attachment: fixed;
+
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -812,12 +867,11 @@ nav i {
   align-items: center;
   margin: auto;
   position: relative;
+  height: 170px;
 }
 .slider_marcas_dos h2 {
   color: #1161a0;
   font-size: 22px;
-  padding-top: 40px;
-  padding-bottom: 20px;
 }
 .customer-logos {
   position: absolute;
@@ -829,8 +883,11 @@ nav i {
 .slide img {
   max-width: 60%;
 }
+.efecto_uno_2 {
+  margin-bottom: 100px;
+}
 .seguros {
-  margin-top: 140px;
+  margin-top: 0px;
   width: 100%;
   overflow-x: hidden;
   text-align: center;
@@ -914,7 +971,7 @@ nav i {
   max-width: 80%;
 }
 .item_testimonios:nth-child(1) {
-  background-color: #781658;
+  background-color: #0082c9;
   width: 80%;
   margin: auto;
   padding: 30px;
@@ -1026,27 +1083,31 @@ h6 {
   width: 100%;
   margin: 7px auto;
   padding: 7px;
+  border: none;
 }
 #email {
   width: 100%;
   margin: 7px auto;
   padding: 10px;
+  border: none;
 }
 #tel,
 #ciudad {
   width: 49%;
   margin: 7px auto;
   padding: 10px;
+  border: none;
 }
 
 textarea {
   width: 100%;
   margin: 7px auto;
   padding: 10px;
+  border: none;
 }
 form button {
   display: block;
-  background-color: #1161a0;
+  background-color: #444444;
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -1299,7 +1360,7 @@ footer {
 
 .profesion_dos {
   margin: 10px auto;
-  color: #781658;
+  color: #555555;
   text-align: left;
   display: block;
   margin: auto;
@@ -1548,11 +1609,12 @@ footer {
 .item_testimonios:nth-child(2) a {
   display: block;
   margin: 20px auto;
-  background-color: #1161a0;
+  background-color: #444444;
   width: 30%;
-  padding: 20px;
+  padding: 12px;
   color: #fff;
   text-decoration: none;
+  border-radius: 7px;
 }
 .imagen_fondo {
   width: 100%;
@@ -1699,6 +1761,31 @@ footer {
   padding: 7px;
   color: #fff;
 }
+
+.title-nosotros {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-title-nosotros {
+  width: 100%;
+  height: auto;
+}
+.container-title-nosotros h2 {
+  color: white;
+  font-size: 45px;
+}
+.redes-header img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
 @media (max-width: 1400px) {
   .logo_ortho {
     max-width: 15%;
@@ -1780,6 +1867,69 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .container-title-nosotros h2 {
+    color: white;
+    font-size: 30px;
+  }
+  .item_testimonios:nth-child(2) a {
+    display: block;
+    margin: 20px auto;
+    background-color: #444444;
+    width: 40%;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+  }
+  /*especialidades*/
+  .especialidades {
+    width: 85%;
+    margin: 25px auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .item-especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #0082c9;
+    width: 100%;
+    padding: 10px 10px;
+    gap: 0px;
+  }
+  .item-especialidades h3 {
+    color: white;
+    font-size: 18px;
+  }
+  .item-especialidades a {
+    display: block;
+    width: 150px;
+    background-color: #444444;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+  .div_image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div_image img {
+    max-width: 70%;
+  }
+  /*especialidades*/
   .container-text {
     z-index: 10;
     position: absolute;
@@ -1923,7 +2073,10 @@ footer {
     min-height: 100vh;
   }
   .icono_principal {
-    max-width: 25%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    right: 10px;
   }
   .contenido_post p {
     color: #fff;
@@ -1946,11 +2099,13 @@ footer {
     cursor: pointer;
   }
   .contactos {
-    right: 5px;
-    bottom: 17vh;
+    right: 15px;
+    bottom: 12vh;
   }
   .contactos img {
-    width: 80%;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
   }
   .contacto p {
     font-size: 14px;
@@ -2147,7 +2302,6 @@ footer {
     max-width: 90%;
   }
   .item_testimonios:nth-child(1) {
-    background-color: #914378;
     width: 90%;
     margin: auto;
     padding: 30px;
@@ -2522,7 +2676,7 @@ footer {
   .icono_principal {
     position: fixed;
     bottom: 3vh;
-    right: 1em;
+    right: 12px;
     z-index: 5;
     animation: pulse 2s infinite;
     border-radius: 50%;
