@@ -1,10 +1,17 @@
 .contenedor_banner {
-  padding-top: 50px;
+  width: 100%;
+  padding-top: 120px;
   text-align: center;
+  background-image: url(../imagenes/parallax-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
 }
-.contenedor_banner img {
-  max-width: 100%;
-}
+
 .container_promos {
   width: 100%;
   margin: 40px auto auto auto;
@@ -23,8 +30,7 @@
   width: 90%;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 
-  minmax(300px, 400px));
+  grid-template-columns: repeat(4, minmax(300px, 400px));
   margin: auto;
   grid-gap: 40px;
   justify-content: center;
