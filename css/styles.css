@@ -423,12 +423,19 @@ nav i {
   width: 100%;
   padding: 40px 20px;
   gap: 10px;
+  transition: all 0.7s;
 }
+.item-especialidades:hover {
+  transform: scale(0.9);
+  transition: all 0.7s;
+}
+
 .item-especialidades h3 {
   color: white;
   font-size: 20px;
 }
 .item-especialidades a {
+  transition: all 0.7s;
   display: block;
   width: 200px;
   background-color: #444444;
@@ -437,6 +444,11 @@ nav i {
   text-decoration: none;
   color: white;
   border-radius: 7px;
+}
+.item-especialidades a:hover {
+  transition: all 0.7s;
+  background-color: white;
+  color: #444444;
 }
 .div_image {
   width: 150px;
@@ -806,7 +818,10 @@ nav i {
 }
 .slider_marcas h2 {
   color: #1161a0;
-  font-size: 22px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
   padding-top: 40px;
   padding-bottom: 20px;
 }
@@ -1414,7 +1429,8 @@ footer {
   font-family: "Bebas Neue", cursive;
 }
 .container-fotos-team {
-  width: 90%;
+  width: 80%;
+
   display: grid;
   grid-template-areas:
     "item1 item2 item3 "
@@ -2632,8 +2648,8 @@ footer {
     display: none;
   }
   .efecto_uno h2 {
-    font-size: 22px;
-    padding: 20px;
+    font-size: 35px;
+    padding: 0px;
   }
   .parallax_dos p {
     font-size: 17px;
