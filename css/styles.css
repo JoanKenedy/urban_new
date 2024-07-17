@@ -96,6 +96,10 @@ nav .menu {
   text-decoration: none;
   color: #555555;
 }
+.menu li.unico a {
+  color: #f6f6f6; /* Cambia el color del texto a rojo */
+
+}
 nav i {
   color: #000;
   font-size: 35px;
@@ -187,7 +191,25 @@ nav i {
   transition: 0.5s;
 }
 
+a.seguro{
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #0082c9; /* Color de fondo por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+a.seguro:hover {
+  background-color: #0082c9; /* Cambia el color de fondo al hacer hover */
+  color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+.menu li.textSeguro {
+  color: #fff; /* Color del texto */
+}
+
 @keyframes crecer {
+  
   0% {
     transform: scaleX(0);
   }
@@ -2109,6 +2131,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+ 
 
   .item-estudios {
     display: flex;
@@ -2439,6 +2462,11 @@ footer {
     color: #fff;
     padding: 10px 0px;
   }
+  .menu li.unico a {
+    background-color: transparent;
+    
+  }
+ 
   nav i {
     color: #fff;
     font-size: 30px;
