@@ -1,0 +1,6 @@
+{
+    "name": "dentarios/urban_new",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
