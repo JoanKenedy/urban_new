@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Somos una clínica dental compuesta por un equipo interdisciplinario que trabaja de forma coordinada para conseguir el mejor resultado de cada tratamiento."
+    />
+    <meta
+      name="keywords"
+      content="Clínica Dental Orthodentic, Ortodoncia, Odontología, Dentista, Clínica dental, Tratamientos dentales, Cuidado dental, Salud bucal, Odontología preventiva, Ortodoncia, Implantes dentales, Blanqueamiento dental, Endodoncia, Prótesis dentales, Periodoncia, Carillas dentales, Odontopediatría, Estética dental, Radiografías dentales, Cirugía oral, Urgencias dentales, Sedación consciente"
+    />
+    <!-- open graph -->
+		<meta property="og:title" content="Clínica Dental Orthodentic" />
+		<meta property="og:description" content="Somos una clínica dental compuesta por un equipo interdisciplinario que trabaja de forma coordinada para conseguir el mejor resultado de cada tratamiento." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://clinicadentalorthodentic.com" />
+		<meta property="og:image" content="https://clinicadentalorthodentic.com/imagenes/logo_ortodenthic.png" />
+    <title>Inicio | Urban Sonrie</title>
+    <link
+      rel="icon"
+      href="imagenes/icono.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+
+   
+ 
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="imagenes/urba-sonrie.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
+        <img src="imagenes/logo-mobil.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
+
+        <ul class="menu">
+          <li >
+            <a href="index.php" data-section="home" data-value="ancla_uno"
+              >Inicio</a
+            >
+          </li>
+          <li >
+            <a href="nosotros.html" data-section="home" data-value="ancla_dos"
+              >Nosotros
+            </a>
+          </li>
+          
+          <li >
+            <a href="servicios.html" data-section="home" data-value="ancla_tres"
+              >Servicios</a
+            >
+          </li>
+         
+          <li >
+            <a href="contacto.php" data-section="home" data-value="ancla_cinco"
+              >Contacto</a
+            >
+          </li>
+
+          <li class="unico">
+            <a
+            class="seguro"
+            href="red-urbansonrie.html"
+            class="icono_dos"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Red UrbanSonrie</a>
+          </li>
+             <li>
+              <a href="https://www.facebook.com/urbansonrie?mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Urabn Sonrie" class="redes-header"
+                ><img src="imagenes/icon_facebook.png" alt="Logo de Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/clinicadentalurbansonrie?igsh=MXc3NzFxZmYzcGJwMQ==" aria-label="Ir a la página de instagram de Urabn Sonrie" class="redes-header"
+                target="_blank"
+                ><img src="imagenes/icon_instagram.png" alt="Logo de instagram"
+              /></a>
+            </li>
+      
+        </ul>
+     
+        <i class="fa-solid fa-bars-staggered abrirmenu"></i>
+        
+      </nav>
+    </header>
+  
+    <div class="slide_contenedor">
+      <div class="miSlider fade">
+        <img src="imagenes/foto-web-1.jpg" alt="" class="img-compu" />
+        <img src="imagenes/foto-1.jpg" alt="" class="img-mobil" />
+        <div class="container-text">
+          <div class="container-body-text">
+            <h2>¡Bienvenidos a Urban Sonrie!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="miSlider fade">
+        <img src="imagenes/foto-web-2.jpg" alt="" class="img-compu" />
+        <img src="imagenes/foto-2.jpg" alt="" class="img-mobil" />
+        <div class="container-text">
+          <div class="container-body-text">
+            <h2>¡La sonrisa que siempre soñaste!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="miSlider fade">
+        <img src="imagenes/foto-web-3.jpg" alt="" class="img-compu" />
+        <img src="imagenes/foto-3.jpg" alt="" class="img-mobil" />
+        <div class="container-text">
+          <div class="container-body-text">
+            <h2>Con lo último en tecnología para satisfacer tus necesidades</h2>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="direcciones">
+        <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+        <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+      </div>
+      <div class="barras">
+        <span class="barra active" onclick="posicionSlide(1)"></span>
+        <span class="barra" onclick="posicionSlide(2)"></span>
+        <span class="barra" onclick="posicionSlide(3)"></span>
+        
+      </div>
+    </div>
+
+    <div class="container-seguro">
+      <div class="seguro-dental">
+        <div class="item-seguro">
+          <img src="./imagenes/seguro-dental.jpg" alt="">
+        </div>
+        <div class="item-seguro">
+          <h3>Sé parte de nuestra red y <br> <span class="sumate">súmate a </span>  nuestra nueva alianza.</h3> <br>
+          <div class="btn-seguros">
+            <a href="red-urbansonrie.html" class="seguro-btn">Quiero ser parte de la red UrbanSonrie</a>
+            <a   href="https://api.whatsapp.com/send?phone=525549713883" target="_blank" class="agenda-btn">Agendar cita</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <section class="parallax_uno">
+      <p data-aos="fade-up" data-aos-duration="1000">
+        Somos una clinica con más de 20 años de experiencia que prioriza la higiene y salud dental de nuestros pacientes, asi como el diseño de las más bella y estetica sonrisa.
+        Cada día trabajamos en la salud, el bienestar de nuestros pacientes y diseñamos su sonrisa con  tecnología de primer nivel.
+        Más de 3000+ implantes dentales, cirugías maxilofaciales y todo tipo de tratamientos dando seguimiento exitosamente.
+      </p>
+    </section>
+    <section class="doctores">
+      <h2>Especialidades</h2>
+  
+       <div class="especialidades">
+        <div class="item-especialidades">
+          <div class="div_image">
+            <img src="imagenes/endodoncia.png" alt="">
+          </div>
+          
+          <h3>Endodoncia</h3>
+          <a href="servicios.html">Saber más</a>
+        </div>
+        <div class="item-especialidades">
+          <div class="div_image">
+            <img src="imagenes/ortodoncia.png" alt="">
+          </div>
+          
+          <h3>Ortodoncia</h3>
+          <a href="servicios.html">Saber más</a>
+        </div>
+        <div class="item-especialidades">
+          <div class="div_image">
+           <img src="imagenes/implante-dental.png" alt="">
+          </div>
+          
+          <h3>Implantología</h3>
+          <a href="servicios.html">Saber más</a>
+        </div>
+        <div class="item-especialidades">
+          <div class="div_image">
+            <img src="imagenes/cirugia-dental.png" alt="">
+          </div>
+          
+          <h3>Cirugía Maxilofacial</h3>
+          <a href="servicios.html">Saber más</a>
+        </div>
+       </div>
+  
+      
+    </section> 
+    <div class="about-team">
+      <h2>Nuestras instalaciones</h2>
+      <div class="container-fotos-team">
+        <div class="item-container-team">
+          <img src="imagenes/urban-1.webp" alt="Fotografía de la Dra. Mónica" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urba-4.webp" alt="Fotografía grupal del equipo OrthoDentic" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urba-2.webp" alt="Fotografía de la Dra. Alis" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/vamos-4.jpeg" alt="Fotografía grupal del equipo OrthoDentic" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urban-3.webp" alt="Fotografía de la Dra. Andrea" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urba-5.webp" alt="Fotografía grupal del equipo OrthoDentic" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urba-7.webp" alt="Fotografía grupal del equipo OrthoDentic" />
+        </div>
+        <div class="item-container-team">
+          <img src="imagenes/urba-6.webp" alt="Fotografía grupal del equipo OrthoDentic" />
+        </div>
+        
+      </div>
+    </div>
+    <div class="slider_marcas">
+      <div class="efecto_uno">
+        <h2>Nuestras promociones :</h2>
+      </div>
+      <div class="contenedor_marcas">
+        <div
+          class="item_marcas"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-section="home"
+          data-value="img_uno"
+        >
+          <img src="imagenes/promo-1.jpg" alt="Promociones" />
+          <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
+        </div>
+        <div
+          class="item_marcas"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-section="home"
+          data-value="img_dos"
+        >
+          <img src="imagenes/promo-2.jpg" alt="Promociones" />
+          <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
+        </div>
+        <div
+          class="item_marcas"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-section="home"
+          data-value="img_dos"
+        >
+          <img src="imagenes/promo-3.jpg" alt="Promociones" />
+          <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
+        </div>
+      
+      </div>
+    </div>
+    <section class="parallax_dos">
+      <p data-aos="fade-up" data-aos-duration="2000">
+        ¡Mejora tu sonrisa! Nosotros te ayudamos. <br />
+      <i class="fa-brands fa-whatsapp"></i>  +525549713883<br /><br />
+        <img src="imagenes/logo-mobil.png" alt="" />
+      </p>
+    </section>
+    <div class="slider_marcas_dos">
+      <div class="efecto_uno_2">
+        <h2>Trabajamos con Marcas de Calidad</h2>
+      </div>
+
+      <section class="customer-logos slider">
+        <div class="slide"><img src="imagenes/american.png" alt="Logo de american" /></div>
+        <div class="slide"><img src="imagenes/activos_dos.png" alt="Logo de hiossen" /></div>
+        <div class="slide"><img src="imagenes/activos_tres.png" alt="Logo de cytoplast" /></div>
+        <div class="slide"><img src="imagenes/ormco.png" alt="Logo de ormco" /></div>
+        <div class="slide"><img src="imagenes/activos_dos.png" alt="Logo de hiossen" /></div>
+        <div class="slide"><img src="imagenes/american.png" alt="Logo de american" /></div>
+        <div class="slide"><img src="imagenes/activos_tres.png" alt="Logo de cytoplast" /></div>
+        <div class="slide"><img src="imagenes/dentsply.png" alt="Logo de dentsply" /></div>
+        <div class="slide"><img src="imagenes/nsk.png" alt="Logo de NSK" /></div>
+        <div class="slide"><img src="imagenes/activos_dos.png" alt="Logo de hiossen" /></div>
+        <div class="slide"><img src="imagenes/activos_tres.png" alt="Logo de cytoplast" /></div>
+        <div class="slide"><img src="imagenes/nsk.png" alt="Logo de NSK" /></div>
+        <div class="slide"><img src="imagenes/dentsply.png" alt="Logo de dentsply" /></div>
+        <div class="slide"><img src="imagenes/activos_dos.png" alt="Logo de hiossen" /></div>
+        <div class="slide"><img src="imagenes/corix.png" alt="Logo de corix" /></div>
+      </section>
+    </div>
+    
+    <section class="testimonios">
+      <div class="item_testimonios">
+        <h2>¿Cómo te podemos ayudar?</h2>
+        <form action="correo.php" method="post">
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre Completo"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo Electrónico"
+          />
+          <input 
+            type="tel" 
+            id="tel" 
+            name="tel" 
+            placeholder="Teléfono" />
+          <input 
+            type="text" 
+            id="direccion" 
+            name="direccion" 
+            placeholder="Dirección" />
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Cuéntanos acerca de tu problema dental"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="item_testimonios">
+        <div class="swiper mySwiper-2" style="height: auto !important">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Lupita Morales</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>26 de septiembre de 2023</span>
+                  <p>
+                    excelente trato y servicio en todo momento, siempre atenta a
+                    tu sentir y a lo que necesitas la super recomiendo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Antonio Martinez</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>22 de septiembre de 2023</span>
+                  <p>
+                    Excelente muy bien explicado el diagnóstico y valoración
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Marcela Botello</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>28 de agosto de 2023</span>
+                  <p>
+                    Excelente trato , muy detallada al explicar y con empatía
+                    hacía la situación. Muy grata experiencia y con confianza en
+                    el tratamiento a seguir.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Adela Garza</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>4 de agosto de 2023</sp>
+                  <p>
+                    Excelente Doctora, muy cuidadosa y muy detallista en el
+                    procedimiento, me explicó de manera sencilla y clara mi
+                    situación.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Ramiro Sanchez Reyes</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>29 de julio de 2023</s>
+                  <p>
+                    Excelente trato y explicaciones profesionales de la Doctora
+                    Monica, sin duda una profesional de la odontología.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Aby</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>19 de julio de 2023</span>
+                  <p>
+                    Fui a realizarme un curetaje y le agradezco mucho la
+                    atención, la amabilidad y profesionalismo a la Dra., siempre
+                    atenta y brinda explicaciones muy claras. Hasta ahora todo
+                    va muy bien y ya no presento sangrado de encías, muchas
+                    gracias Dra. Mónica!! :)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Marce Nicanor</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>11 de julio de 2023</span>
+                  <p>
+                    Muy buena atención , me gusta que mandan el presupuesto
+                    detallado y te explican cada tratamiento que van a
+                    realizarte .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sub_item_testimonios">
+                <span>Marijose</span>
+                <div class="estrellas">
+                  <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card_footer">
+                  <span>24 de junio de 2023</span>
+                  <p>
+                    Acudimos por primera ocasión y nos llevamos una muy grata
+                    experiencia. La doctora fue muy profesional y logró
+                    ofrecerle a mi hijo confianza y un mejor enfoque sobre el
+                    cuidado bucal. Estamos entusiasmados por el tratamiento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next btn-compu"></div>
+          <div class="swiper-button-prev btn-compu"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--<div
+          class="sub_item_testimonios"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <img src="imagenes/foto_perfil_2.jpg" alt="" />
+
+          <h5>Adrián Berlanga</h5>
+
+          <div class="estrellas">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="card_footer">
+            <h6>5 de Enero del 2022</h6>
+            <p>
+              Buen trato, examinación y explicación a detalle, profesionalismo y
+              compromiso con el trabajo, abierto/a a responder mis dudas y buen
+              comportamiento.
+            </p>
+          </div>
+        </div>
+        <div
+          class="sub_item_testimonios"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <img src="imagenes/foto_perfil_3.jpg" alt="" />
+          <h5>Abigail Pérez</h5>
+          <div class="estrellas">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h6>8 de diciembre del 2021</h6>
+
+          <p>
+            Explicaciones super claras del tratamiento necesario, la doctora muy
+            empática y todo el personal muy amables.
+          </p>
+        </div>
+        <div
+          class="sub_item_testimonios"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <img src="imagenes/foto_perfil.jpg" alt="" />
+          <h5>Javier González</h5>
+          <div class="estrellas">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h6>11 de noviembre 2021</h6>
+          <p>
+            Fue una experiencia grata, la atención de la doctora fue
+            profesional, hizo muy buen trabajo y diagnóstico ante posibles
+            problemas dentales
+          </p>
+        </div>
+        <div
+          class="sub_item_testimonios"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <img src="imagenes/foto_perfil_4.jpg" alt="" />
+          <h5>Gabriela Arriaga</h5>
+
+          <div class="estrellas">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h6>21 de octubre de 2021</h6>
+
+          <p>
+            Excelente atención al cliente, cuidan cada detalle y seguimiento de
+            tu tratamiento, te explican con detalle y toman las medidas de
+            seguridad sanitarias COVID-19
+          </p>
+        </div>-->
+        <a
+          target="_blank"
+          href="https://www.doctoralia.com.mx/monica-bridgette-guerrero-martinez/dentista-odontologo/san-nicolas-de-los-garza?utm_campaign=94969&utm_medium=link&utm_source=widget&utm_term=facebook-profile-link#profile-reviews"
+        >
+          Ver más
+        </a>
+      </div>
+    </section>
+
+    <div class="redes_flotantes">
+      <img src="imagenes/icono_principal.png" alt="Icono contacto" class="icono_principal" />
+    
+
+      <div class="contactos">
+        <a
+          onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=525549713883');"
+          href="https://api.whatsapp.com/send?phone=525549713883"
+          class="icono_dos"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="imagenes/whats.png" alt="Logo de WhatsApp"
+        /></a>
+       
+        <a
+          onclick="return gtag_report_conversion('tel:5549713883');"
+          href="tel:5549713883 "
+          class="icono_dos"
+          target="_blank"
+          ><img src="imagenes/phone.png" alt="Icono de teléfono"
+        /></a>
+       
+       
+      </div>
+    </div>
+
+    <footer>
+      <div class="item_footer">
+        <div class="sub_item_footer">
+          <div class="efecto uno">
+            <h3>Ubicación</h3>
+          </div>
+          <ul>
+            <li>Dr. Guillermo Urban</li>
+            <li>
+              <a href="https://maps.app.goo.gl/AtwKdGy9kn22F6JRA" aria-label="Ir a la Ubicación de Urban Sonrie"
+                >Av Sor Juana Inés de La Cruz 280, San Lorenzo, 54033 Tlalnepantla, Méx Local I02 piso 1 enfrente de el gimnasio Sports World.</a
+              >
+            </li>
+            <li><a href="tel:5549713883">Teléfono: 5549713883 </a></li>
+            <li>
+              <a href="mailto:urban.sonrie08@gmail.com">
+                Email: urban.sonrie08@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="download/Aviso de privacidad_orthodentic.pdf">
+                Aviso de Privacidad</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sub_item_footer">
+          <div class="efecto dos">
+            <h3>Horario</h3>
+          </div>
+          <ul>
+            <li>Lunes-Viernes: 10:00AM-14:00PM y 16:00PM-8:00PM </li>
+            <li>Sábado: 10:00AM-15:00PM</li>
+            <li> Pagos con Tarjeta </li>
+            <li>
+              <img src="imagenes/pagos_tarjeta.png" alt="Tarjetas que aceptamos" />
+            </li>
+          </ul>
+        </div>
+        <div class="sub_item_footer">
+          <div class="efecto tres">
+            <h3>Redes Sociales</h3>
+          </div>
+          <ul class="menu_redes">
+            <li>
+              <a href="https://www.facebook.com/urbansonrie?mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Urban Sonrie"
+                ><img src="imagenes/icon_facebook.png" alt="Logo de Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/clinicadentalurbansonrie?igsh=MXc3NzFxZmYzcGJwMQ==" aria-label="Ir a la página de instagram de Urban Sonrie"
+                target="_blank"
+                ><img src="imagenes/icon_instagram.png" alt="Logo de instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item_footer">
+        <p>
+          Urban Sonrie <span id="anio">2021</span> © | Página Desarrollada por
+          <a href="https://dentarios.com.mx/programacion.php"
+            >Agencia de Marketing Dentarios ©
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!--Modal Promociones buen fin 
+    <div class="modal-promos" id="modalPromo">
+      <i class="fa-solid fa-xmark" id="close"></i>
+      <h2>¡Consigue una sonrisa envidiable!</h2>
+
+      <div class="container-modal-promos">
+        <div class="item-promo-modal">
+          <img
+            src="imagenes/promociones/promo-feb-1.jpg"
+            alt="Promociones exclusivas"
+            class="img-modal"
+          />
+        </div>
+        <div class="item-promo-modal">
+          <img
+            src="imagenes/promociones/promo-feb-2.jpg
+            alt="Promociones exclusivas"
+            class="img-modal"
+          />
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-around; width: 400px">
+        <a
+          href="https://api.whatsapp.com/send?phone=528115383937"
+          target="_blank"
+          >Agendar Cita</a
+        >
+        <a href="promociones.html">Más Promociones</a>
+      </div>
+    </div>-->
+    <!--Fin modal promociones buen fin-->
+    <!---  <script src="js/languages.js"></script> -->
+    <!--- <script src="js/idiomas.js"></script> -->
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/year.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/validacion.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper-testimonios.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
