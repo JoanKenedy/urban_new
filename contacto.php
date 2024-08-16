@@ -20,7 +20,7 @@
 
       <ul class="menu">
         <li>
-          <a href="index.php" data-section="home" data-value="ancla_uno"
+          <a href="index.html" data-section="home" data-value="ancla_uno"
             >Inicio</a
           >
         </li>
@@ -41,6 +41,15 @@
             >Contacto</a
           >
         </li>
+        <li class="unico">
+            <a
+            class="seguro"
+            href="red-urbansonrie.html"
+            class="icono_dos"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Red UrbanSonrie</a>
+          </li>
            <li>
             <a href="https://www.facebook.com/urbansonrie?mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Urabn Sonrie" class="redes-header"
               ><img src="imagenes/icon_facebook.png" alt="Logo de Facebook"
