@@ -347,9 +347,21 @@
             rows="10"
             placeholder="Cuéntanos acerca de tu problema dental"
           ></textarea>
-          <button type="submit">Enviar</button>
+          <button id="enviar" type="submit">Enviar</button>
         </form>
+        <div id="modal" class="modal openmodal">
+          <button id="close">
+            <i class="fa-solid fa-xmark" id="close"></i>
+          </button>
+          <div class="containermodal">
+            <p>Mensaje enviado exitosamente</p> <br>
+            <p>El doctor se comunicara lo mas pronto posible.
+            </p>
+            <p>Gracias</p>
+          </div>
+        </div>
       </div>
+
       <div class="item_testimonios">
         <div class="swiper mySwiper-2" style="height: auto !important">
           <div class="swiper-wrapper">
@@ -751,6 +763,43 @@
           ],
         });
       });
+    </script>
+    <script>
+      // scripts.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+  const openModalButton = document.getElementById('enviar');
+  const closeModalButton = document.getElementById('close');
+  const form = document.getElementById('myForm');
+
+  // Función para abrir el modal
+  function openModal() {
+    modal.style.display = 'flex'; // Utiliza 'flex' para centrar el contenido
+  }
+
+  // Función para cerrar el modal
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  // Abrir el modal al hacer clic en el botón de enviar
+  openModalButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Previene el envío del formulario
+    openModal();
+  });
+
+  // Cerrar el modal al hacer clic en el botón de cerrar
+  closeModalButton.addEventListener('click', closeModal);
+
+  // Cerrar el modal si se hace clic fuera del contenido del modal
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
+
     </script>
     <script>
       AOS.init();

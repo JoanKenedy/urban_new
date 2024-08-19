@@ -2486,7 +2486,51 @@ a.ssolink {
 .tans4s {
   animation: animationLeftRight 4s ease-in-out infinite;
 }
+.modal {
+  
+  position: fixed;
+  z-index: 100; /* Asegura que el modal esté por encima del contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite desplazamiento si el contenido es largo */
+  background-color: rgba(0,0,0,0.4); /* Fondo oscuro con transparencia */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.containermodal {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  position: relative; /* Necesario para posicionar el botón de cerrar */
+}
+
+.close {
+  position: absolute; /* Posiciona el botón en relación con el contenedor */
+  top: 10px; /* Ajusta la distancia desde la parte superior del contenedor */
+  right: 10px; /* Ajusta la distancia desde la parte derecha del contenedor */
+  color: #888; /* Color del botón de cerrar */
+  font-size: 37px;
+  background-color: transparent;
+  border: none; /* Quita el borde del botón */
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+      
 @keyframes animationLeftRight {
   0% {
     transform: translateX(0px);
