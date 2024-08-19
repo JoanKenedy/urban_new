@@ -2611,9 +2611,14 @@ a.ssolink {
     color: #0082c9;
   }
   .btn-seguros {
-    display: flex;
-    gap:inherit;
+    display: contents;
+    gap:15px;
   }
+  .item-seguro:nth-child(2) {
+   
+    height: 350px;
+   
+}
   .container-formulario-datos h2 {
     text-align: left;
     font-size: 35px;
