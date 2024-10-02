@@ -38,6 +38,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
 
 
    
@@ -52,7 +53,7 @@
 
         <ul class="menu">
           <li >
-            <a href="index.php" data-section="home" data-value="ancla_uno"
+            <a href="index.html" data-section="home" data-value="ancla_uno"
               >Inicio</a
             >
           </li>
@@ -69,7 +70,7 @@
           </li>
          
           <li >
-            <a href="contacto.php" data-section="home" data-value="ancla_cinco"
+            <a href="contacto.html" data-section="home" data-value="ancla_cinco"
               >Contacto</a
             >
           </li>
@@ -251,7 +252,9 @@
           data-section="home"
           data-value="img_uno"
         >
-          <img src="imagenes/promo-1.jpg" alt="Promociones" />
+          <a style="display: contents;" href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">
+            <img src="imagenes/promo-1.jpg" alt="Promociones" />
+          </a>
           <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
         </div>
         <div
@@ -261,7 +264,9 @@
           data-section="home"
           data-value="img_dos"
         >
+        <a style="display: contents;" href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">
           <img src="imagenes/promo-2.jpg" alt="Promociones" />
+        </a>
           <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
         </div>
         <div
@@ -271,7 +276,9 @@
           data-section="home"
           data-value="img_dos"
         >
+        <a style="display: contents;" href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">
           <img src="imagenes/promo-3.jpg" alt="Promociones" />
+        </a>
           <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
         </div>
       
@@ -311,39 +318,97 @@
     <section class="testimonios">
       <div class="item_testimonios">
         <h2>¿Cómo te podemos ayudar?</h2>
-        <form action="correo.php" method="post">
-          <input
+    <form action="correo.php" method="post" id="contactoForm" onsubmit="return pregunta()">
+        <input
             type="text"
             id="nombre"
             name="nombre"
             placeholder="Nombre Completo"
-          />
-          <input
+            required
+        />
+        <input
             type="email"
             id="email"
             name="email"
             placeholder="Correo Electrónico"
-          />
-          <input 
-            type="tel" 
-            id="tel" 
-            name="tel" 
-            placeholder="Teléfono" />
-          <input 
-            type="text" 
-            id="direccion" 
-            name="direccion" 
-            placeholder="Dirección" />
-          <textarea
-            name="textarea"
-            id="textarea"
+            required
+        />
+        <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Teléfono"
+            maxlength="10"
+            required
+        />
+        <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="Dirección"
+            required
+        />
+        <textarea
+            name="mensaje" 
+            id="mensaje"
             cols="30"
             rows="10"
             placeholder="Cuéntanos acerca de tu problema dental"
+            required
+        ></textarea>
+        <button id="enviar" type="submit">Enviar</button>
+    </form>
+        <!-- <form action="correo.php" method="post" id="contactoForm" onsubmit="return pregunta()">
+          <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre Completo"
+              required
+          />
+          <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              required
+          />
+          <input
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="Teléfono"
+              required
+          />
+          <input
+              type="text"
+              id="direccion"
+              name="direccion"
+              placeholder="Dirección"
+          />
+          <textarea
+              name="mensaje" 
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Cuéntanos acerca de tu problema dental"
+              required
           ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+          <button id="enviar" type="submit">Enviar</button>
+      </form> -->
+        <!-- <div id="modal" class="modal openmodal">
+          <button id="close">
+            <i class="fa-solid fa-xmark" id="close"></i>
+          </button>
+          <div class="containermodal">
+            <p>Mensaje enviado exitosamente</p> <br>
+            <p>El doctor se comunicara lo mas pronto posible.
+            </p>
+            <p>Gracias</p>
+          </div>
+        </div> -->
       </div>
+
       <div class="item_testimonios">
         <div class="swiper mySwiper-2" style="height: auto !important">
           <div class="swiper-wrapper">
@@ -746,6 +811,68 @@
         });
       });
     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+    <script>
+       function pregunta() {
+        // Muestra el SweetAlert
+        swal({
+            title: "¡Éxito!",
+            text: "El doctor se comunicara los mas pronto posible",
+            type: "success",
+            timer: 15000,
+            showConfirmButton: false
+        }, function() {
+            // Envía el formulario después de la alerta
+            document.getElementById('contactoForm').submit();
+        });
+    }
+  // const modal = document.getElementById('modal');
+  // const openModalButton = document.getElementById('enviar');
+  // const closeModalButton = document.getElementById('close');
+  // const form = document.getElementById('myForm');
+  // // Función para abrir el modal
+  // function openModal() {
+  //   modal.style.display = 'flex'; // Utiliza 'flex' para centrar el contenido
+  // }
+  // // Función para cerrar el modal
+  // function closeModal() {
+  //   modal.style.display = 'none';
+  // }
+  // // Maneja el envío del formulario
+  // form.addEventListener('submit', (event) => {
+  //   event.preventDefault(); // Previene el envío del formulario
+
+  //   // Crea un objeto FormData con los datos del formulario
+  //   const formData = new FormData(form);
+
+  //   // Envía los datos usando fetch
+  //   fetch('ruta-a-tu-script-php.php', {
+  //     method: 'POST',
+  //     body: formData
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     if (data.success) {
+  //       openModal();
+  //     } else {
+  //       alert('Hubo un problema al enviar el correo.');
+  //     }
+  //   })
+  //   .catch(error => {
+  //     console.error('Error:', error);
+  //     alert('Hubo un problema con la solicitud.');
+  //   });
+  // });
+  // // Cerrar el modal al hacer clic en el botón de cerrar
+  // closeModalButton.addEventListener('click', closeModal);
+  // // Cerrar el modal si se hace clic fuera del contenido del modal
+  // window.addEventListener('click', (event) => {
+  //   if (event.target === modal) {
+  //     closeModal();
+  //   }
+  // });
+    </script>
+
     <script>
       AOS.init();
     </script>

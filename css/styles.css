@@ -2486,7 +2486,51 @@ a.ssolink {
 .tans4s {
   animation: animationLeftRight 4s ease-in-out infinite;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100; /* Asegura que el modal esté por encima del contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite desplazamiento si el contenido es largo */
+  background-color: rgba(0,0,0,0.4); /* Fondo oscuro con transparencia */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.containermodal {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  top: 29%;
+  left: 25%;
+  max-width: 500px;
+   /* Necesario para posicionar el botón de cerrar */
+}
+
+#close {
+  position: absolute; /* Posiciona el botón en relación con el contenedor */
+ /* Ajusta la distancia desde la parte derecha del contenedor */
+  top: 40%;
+  right: 28%;
+  color: #ffffff; /* Color del botón de cerrar */
+  font-size: 37px;
+  background-color: transparent;
+  border: none; /* Quita el borde del botón */
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+#close:hover,
+#close:focus {
+  color: rgb(196, 44, 44);
+  text-decoration: none;
+}
+      
 @keyframes animationLeftRight {
   0% {
     transform: translateX(0px);
@@ -2611,9 +2655,14 @@ a.ssolink {
     color: #0082c9;
   }
   .btn-seguros {
-    display: flex;
-    gap:inherit;
+    display: contents;
+    gap:15px;
   }
+  .item-seguro:nth-child(2) {
+   
+    height: 350px;
+   
+}
   .container-formulario-datos h2 {
     text-align: left;
     font-size: 35px;
