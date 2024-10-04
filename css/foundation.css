@@ -615,6 +615,211 @@ dialog {
   border-radius: 7px;
 }
 
+/* button  social networks */
+
+.contacto {
+  background-color: #005e81;
+  width: 350px;
+  padding: 12px 30px 12px 40px;
+  position: fixed;
+  bottom: 8vh;
+  right: 1.3em;
+  border-radius: 21px;
+  transition: 0.7s;
+  z-index: 1;
+  text-align: left;
+  cursor: pointer;
+  animation: crecer 5s infinite;
+  transform-origin: right;
+}
+.menu_redes {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  gap: 30px;
+}
+.icono_redes {
+  font-size: 50px;
+  transition: 0.5s;
+}
+.icono_redes:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+a.seguro {
+  text-decoration: none; /* Quita el subrayado por defecto */
+  color: #fff; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+  background-color: #0082c9; /* Color de fondo por defecto */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+}
+a.seguro:hover {
+  background-color: #0082c9; /* Cambia el color de fondo al hacer hover */
+  color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+.menu li.textSeguro {
+  color: #fff; /* Color del texto */
+}
+
+@keyframes crecer {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+.contact_uno {
+  background-color: green;
+  width: 190px;
+  padding: 12px 30px 12px 40px;
+  position: fixed;
+  bottom: 33vh;
+  right: 1.3em;
+  border-radius: 21px;
+  transition: 0.7s;
+  z-index: 1;
+  text-align: left;
+  cursor: pointer;
+  animation: crecer;
+  animation-duration: 5s;
+  z-index: -1;
+  animation-iteration-count: 5;
+  transform-origin: right;
+}
+.contact_uno p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+.contact_dos {
+  background-color: #05a6e1;
+  width: 190px;
+  padding: 12px 30px 12px 40px;
+  position: fixed;
+  bottom: 19vh;
+  right: 1.3em;
+  border-radius: 21px;
+  transition: 0.7s;
+  z-index: 1;
+  text-align: left;
+  cursor: pointer;
+  animation: crecer;
+  animation-duration: 5s;
+  z-index: -1;
+  animation-iteration-count: 5;
+  transform-origin: right;
+}
+.contact_dos p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+.contact_tres {
+  background-color: #00c3a5;
+  width: 190px;
+  padding: 12px 30px 12px 40px;
+  position: fixed;
+  bottom: 4vh;
+  right: 1.3em;
+  border-radius: 21px;
+  transition: 0.7s;
+  z-index: 1;
+  text-align: left;
+  cursor: pointer;
+  animation: crecer;
+  animation-duration: 5s;
+  z-index: -1;
+  animation-iteration-count: 5;
+  transform-origin: right;
+}
+.contact_tres p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.contacto p {
+  color: #fff;
+  font-size: 18px;
+}
+.redes_flotantes {
+  width: 100%;
+}
+.icono_principal {
+  position: fixed;
+  bottom: 4vh;
+  right: 15px;
+  z-index: 5;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+}
+.contactos {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  position: fixed;
+  bottom: 10vh;
+  right: 22px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  visibility: hidden;
+  z-index: 1;
+}
+.aparecer {
+  position: fixed;
+  bottom: 17vh;
+  right: 13px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 998;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+  z-index: 1;
+}
+.contactos img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
 
 /* footer */
 
@@ -1081,7 +1286,8 @@ footer {
   }
 
   .donation__img {
-    width: 50%;
+    width: 45%;
+    margin-right: 2rem;
   }
 
   /* section testimonios */
@@ -1212,7 +1418,210 @@ footer {
     border-radius: 7px;
   }
 
+  /* button  social networks */
 
+  .contacto {
+    background-color: #005e81;
+    width: 350px;
+    padding: 12px 30px 12px 40px;
+    position: fixed;
+    bottom: 8vh;
+    right: 1.3em;
+    border-radius: 21px;
+    transition: 0.7s;
+    z-index: 1;
+    text-align: left;
+    cursor: pointer;
+    animation: crecer 5s infinite;
+    transform-origin: right;
+  }
+  .menu_redes {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    gap: 30px;
+  }
+  .icono_redes {
+    font-size: 50px;
+    transition: 0.5s;
+  }
+  .icono_redes:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+  
+  a.seguro {
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #0082c9; /* Color de fondo por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+  }
+  a.seguro:hover {
+    background-color: #0082c9; /* Cambia el color de fondo al hacer hover */
+    color: #fff; /* Cambia el color del texto al hacer hover */
+  }
+  
+  .menu li.textSeguro {
+    color: #fff; /* Color del texto */
+  }
+  
+  @keyframes crecer {
+    0% {
+      transform: scaleX(0);
+    }
+  
+    50% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0);
+    }
+  }
+  .contact_uno {
+    background-color: green;
+    width: 190px;
+    padding: 12px 30px 12px 40px;
+    position: fixed;
+    bottom: 33vh;
+    right: 1.3em;
+    border-radius: 21px;
+    transition: 0.7s;
+    z-index: 1;
+    text-align: left;
+    cursor: pointer;
+    animation: crecer;
+    animation-duration: 5s;
+    z-index: -1;
+    animation-iteration-count: 5;
+    transform-origin: right;
+  }
+  .contact_uno p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .contact_dos {
+    background-color: #05a6e1;
+    width: 190px;
+    padding: 12px 30px 12px 40px;
+    position: fixed;
+    bottom: 19vh;
+    right: 1.3em;
+    border-radius: 21px;
+    transition: 0.7s;
+    z-index: 1;
+    text-align: left;
+    cursor: pointer;
+    animation: crecer;
+    animation-duration: 5s;
+    z-index: -1;
+    animation-iteration-count: 5;
+    transform-origin: right;
+  }
+  .contact_dos p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .contact_tres {
+    background-color: #00c3a5;
+    width: 190px;
+    padding: 12px 30px 12px 40px;
+    position: fixed;
+    bottom: 4vh;
+    right: 1.3em;
+    border-radius: 21px;
+    transition: 0.7s;
+    z-index: 1;
+    text-align: left;
+    cursor: pointer;
+    animation: crecer;
+    animation-duration: 5s;
+    z-index: -1;
+    animation-iteration-count: 5;
+    transform-origin: right;
+  }
+  .contact_tres p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .contacto p {
+    color: #fff;
+    font-size: 18px;
+  }
+  .redes_flotantes {
+    width: 100%;
+  }
+  .icono_principal {
+    position: fixed;
+    bottom: 4vh;
+    right: 15px;
+    z-index: 5;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    70% {
+      transform: scale(1.1);
+      box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    }
+  }
+  .contactos {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    position: fixed;
+    bottom: 10vh;
+    right: 22px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 1;
+  }
+  .aparecer {
+    position: fixed;
+    bottom: 17vh;
+    right: 19px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 998;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
+    z-index: 1;
+  }
+  .contactos img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
 
   /* footer */
 
