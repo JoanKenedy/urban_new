@@ -700,58 +700,63 @@ footer {
 
   /* header */
 
-  header {
-    position: static;
-    background-color: #fff;
-    width: 100%;
-  }
-
   header nav {
-    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: static;
-  }
-
-  .menu li {
-    margin-left: 30px;
-    list-style: none;
-  }
-
-  .menu li a {
-    text-decoration: none;
-    color: #555555;
-  }
-
-  nav i {
-    color: #000;
-    font-size: 35px;
-    display: none !important;
+    padding: 15px 0px;
+    height: 70px;
   }
 
   .logo_ortho {
-    max-width: 12%;
-    padding-left: 20px;
     display: block;
+    max-width: 30%;
+    padding-left: 20px;
   }
 
   .logo_blanco {
     display: none;
   }
 
-  .imagen_fondo {}
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    position: static; 
+    background-color: transparent; 
+    width: auto;
+    height: auto; 
+    left: 0;
+    top: 0;
+    transition: none; 
+  }
 
-  .icono_principal {}
+  .menu li {
+    margin-left: 20px;
+    margin-top: 0;
+  }
 
-  .nav__logo {}
+  .menu li a {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .fa-bars-staggered {
+    display: none !important;
+  }
+
+  .menu li.unico a {
+    background-color: #0057a1;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .menu li a img {
+    width: 25px;
+    height: 25px;
+  }
 
   /* main container */
 
