@@ -4,6 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+@import url("./tomografo.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -69,19 +72,23 @@ body {
     text-shadow: none;
   }
 }
-header {
+
+/*  */
+/* header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   background-color: #fff;
   width: 100%;
+  box-sizing: border-box;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  box-sizing: border-box;
 }
 nav .menu {
   display: flex;
@@ -97,7 +104,7 @@ nav .menu {
   color: #555555;
 }
 .menu li.unico a {
-  color: #f6f6f6; /* Cambia el color del texto a rojo */
+  color: #f6f6f6; 
 }
 nav i {
   color: #000;
@@ -112,7 +119,110 @@ nav i {
   max-width: 60%;
   padding-left: 20px;
   display: none;
+} */
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
 }
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+/* Estilos del menú en escritorio */
+nav .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #555555;
+}
+
+/* Para la clase "unico" */
+.menu li.unico a {
+  color: #f6f6f6; /* Aquí puedes ajustar a cualquier color que prefieras */
+}
+
+/* Logo en escritorio */
+.logo_ortho {
+  max-width: 12%;
+}
+
+/* Logo en móviles */
+.logo_blanco {
+  max-width: 60%;
+  padding-left: 20px;
+  display: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  width: auto;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-icon {
+  height: 10px;
+  max-height: 10px;
+} 
+
+.dropdown-menu li {
+  width: auto;
+  margin: 0 5px;
+}
+
+.dropdown-menu a {
+  margin-left: 0;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #555555;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav i {
+  color: #000;
+  font-size: 35px;
+  display: none !important;
+}
+
+
+/*  */
 /*estilos seguro*/
 .container-seguro {
   width: 100%;
@@ -625,6 +735,30 @@ a.seguro:hover {
   transition: 2s;
   z-index: 1;
 }
+
+.info-guillermo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+.info-guillermo-img {
+  width: 20%;
+  box-shadow: 0px 3px 26px 5px rgba(0,0,0,0.75);
+}
+
+.info-guillermo-text {
+  width: 70%;
+  text-align: justify;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
 .doctores {
   width: 100%;
 }
@@ -1654,6 +1788,17 @@ footer {
 .about-team {
   width: 100%;
 }
+
+.plaza-fashion-container {
+  width: 100%;
+}
+
+.plaza-fashion-text {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
 .about-team h2 {
   text-align: center;
   text-transform: uppercase;
@@ -2955,6 +3100,29 @@ a.ssolink {
   .item-mision p {
     font-size: 15px;
   }
+
+  .info-guillermo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .info-guillermo-img {
+    width: 80%;
+    box-shadow: 0px 3px 26px 5px rgba(0,0,0,0.75);
+  }
+  
+  .info-guillermo-text {
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+  }
+
   .doctores h2 {
     font-size: 35px;
     margin-top: 20px;
@@ -3130,9 +3298,9 @@ a.ssolink {
     font-size: 25px;
     font-weight: bolder;
   }
-  .logo_ortho {
+  /* .logo_ortho {
     max-width: 18%;
-  }
+  } */
   .img-compu {
     display: none;
   }
@@ -3175,7 +3343,7 @@ a.ssolink {
     z-index: 1;
     top: auto;
   }
-  header {
+  /* header {
     position: fixed;
     top: 0;
     left: 0;
@@ -3188,6 +3356,7 @@ a.ssolink {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+    box-sizing: border-box;
     height: 55px;
   }
   .menu {
@@ -3215,11 +3384,11 @@ a.ssolink {
     margin-left: 10px;
     margin-top: 30px;
     list-style: none;
-  }
+  } */
   .flags {
     margin-top: 30px;
   }
-  .menu li a {
+  /* .menu li a {
     font-size: 17px;
     text-decoration: none;
     color: #fff;
@@ -3245,7 +3414,106 @@ a.ssolink {
     max-width: 40%;
     padding-left: 20px;
     display: block;
+  } */
+
+  /* Header en moviles */
+
+  .logo_ortho {
+    display: none;
   }
+
+  .logo_blanco{
+    display: block;
+    max-width: 30%;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #0082c9;
+    width: 100%;
+  }
+
+  nav {
+    box-sizing: border-box;
+  }
+
+  nav > i {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    display: block !important;
+    padding-right: 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    top: 100%;
+    height: 100vh;
+    left: -100%;
+    transition: 1s;
+    z-index: 999;
+  }
+
+  .aparecer_menu {
+    left: 0;
+    transition: 1s;
+  }
+
+  .menu li {
+    margin-left: 10px;
+    margin-top: 25px;
+    list-style: none;
+  }
+
+  .menu li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .menu .dropdown {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu .dropdown-menu {
+    display: block;
+    height: 100%;
+    position: static; 
+    background-color: transparent; 
+    box-shadow: none; 
+    text-align: center;
+  }
+
+  .menu .dropdown-menu li {
+    width: auto;
+  }
+
+  .menu .dropdown-menu a {
+    color: #fff; 
+    padding: 0;
+  }
+
+  .menu li.unico a {
+    background-color: transparent;
+  }
+
+  .dropdown > a {
+    display: none;
+  }
+
+  /*  */
+
   .imagen_fondo {
     width: 100%;
     padding: 50px 0px;
@@ -4200,6 +4468,7 @@ a.ssolink {
     width: 20%;
     z-index: 999;
   }
+ 
   .contact_uno {
     background-color: green;
     width: 180px;
