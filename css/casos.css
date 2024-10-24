@@ -7,6 +7,7 @@
 h1 {
   text-align: center;
   color: #1161a0;
+  margin-bottom: 20px;
 }
 
 .titulos h4 {
@@ -28,11 +29,12 @@ h1 {
 .introduccion::after {
   content: '';
   position: absolute;
+  
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(44, 129, 240, 0.5);
+  background-color: rgba(14, 71, 146, 0.63);
   z-index: 1;
 }
 
@@ -141,25 +143,32 @@ h1 {
 @media (min-width: 767px) {
   .titulos {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 55px;
+    padding: 20px;
   }
 
   .titulos h4 {
+    width: 70%;
     font-size: 30px;
   }
 
   .introduccion {
-    padding: 70px 30px;
+    padding: 120px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
   }
 
   .introduccion:after {
-    padding: 70px 30px;
+    padding: 90px 30px;
   }
 
   .introduccion-text {
@@ -168,7 +177,8 @@ h1 {
   }
 
   .casos-title {
-    font-size: 30px;
+    font-size: 45px;
+    margin-bottom: 30px;
   }
 
   .casos-slider{
@@ -186,10 +196,10 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 30px;
   }
 
   .casos-item {
@@ -247,6 +257,7 @@ h1 {
   .item-6 {
     background-image: url("../imagenes/casos/casos-6.webp");
   } */
+
 
   .cta-content p {
     width: 60%;
