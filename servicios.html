@@ -26,9 +26,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- jQuery -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!-- Bootstrap -->
    
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '295640356872578');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=295640356872578&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
         <img src="imagenes/urba-sonrie.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
         <img src="imagenes/logo-mobil.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
@@ -58,7 +76,7 @@
           </li>
           
           <li>
-            <a href="./foundation.html" data-section="home" data-value="ancla_seis"
+            <a href="http://fundacion-urbansonrie.dentarios.com.mx/" data-section="home" data-value="ancla_seis"
               >Fundación</a
             >
           </li>
@@ -90,7 +108,51 @@
         <i class="fa-solid fa-bars-staggered abrirmenu"></i>
         
       </nav>
+    </header> -->
+    
+    <header>
+      <nav>
+        <img src="imagenes/urba-sonrie.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
+        <img src="imagenes/logo-mobil.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
+  
+        <ul class="menu">
+          <li>
+            <a href="index.html" data-section="home" data-value="ancla_uno">Inicio</a>
+          </li>
+          <li>
+            <a href="nosotros.html" data-section="home" data-value="ancla_dos">Nosotros</a>
+          </li>
+          <li>
+            <a href="contacto.html" data-section="home" data-value="ancla_cinco">Contacto</a>
+          </li>
+          <li class="dropdown">
+            <a href="servicios.html" data-section="home" data-value="ancla_tres">Servicios &nbsp <img class="dropdown-icon" src="./imagenes/header-arrow.svg" alt=""></a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" href="http://fundacion-urbansonrie.dentarios.com.mx/">Fundación</a></li>
+              <li><a href="./casos.html">Casos</a></li>
+              <li><a href="./tomografo.html">Tomógrafo</a></li>
+            </ul>
+          </li>
+          <li class="unico">
+            <a class="seguro" href="red-urbansonrie.html" target="_blank" rel="noopener noreferrer">Red UrbanSonrie</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/urbansonrie?mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Urabn Sonrie" class="redes-header">
+              <img src="imagenes/icon_facebook.png" alt="Logo de Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/clinicadentalurbansonrie?igsh=MXc3NzFxZmYzcGJwMQ==" aria-label="Ir a la página de instagram de Urabn Sonrie" class="redes-header" target="_blank">
+              <img src="imagenes/icon_instagram.png" alt="Logo de instagram" />
+            </a>
+          </li>
+        </ul>
+  
+        <i class="fa-solid fa-bars-staggered abrirmenu"></i>
+      </nav>
     </header>
+  
+    
     <div class="imagen_fondo">
       <div class="img_fondo" data-aos="fade-right" data-aos-duration="1000">
         <h2>Servicios</h2>
@@ -383,7 +445,9 @@
             <li>Dr. Guillermo Urban</li>
             <li>
               <a href="https://maps.app.goo.gl/AtwKdGy9kn22F6JRA" aria-label="Ir a la Ubicación de Urban Sonrie"
-                >Av Sor Juana Inés de La Cruz 280, San Lorenzo, 54033 Tlalnepantla, Méx Local I02 piso 1 enfrente de el gimnasio Sports World.</a
+                >
+                Plaza Tlalne Fashion Mall <br>
+                Av Sor Juana Inés de La Cruz 280, San Lorenzo, 54033 Tlalnepantla, Méx Local I02 piso 1 enfrente de el gimnasio Sports World.</a
               >
             </li>
             <li><a href="tel:5549713883">Teléfono: 5549713883 </a></li>
