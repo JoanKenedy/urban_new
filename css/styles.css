@@ -121,7 +121,6 @@ nav i {
   display: none;
 } */
 
-
 header {
   position: fixed;
   top: 0;
@@ -137,7 +136,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 /* Estilos del menú en escritorio */
@@ -197,7 +196,7 @@ nav .menu {
 .dropdown-icon {
   height: 10px;
   max-height: 10px;
-} 
+}
 
 .dropdown-menu li {
   width: auto;
@@ -226,7 +225,6 @@ nav i {
   display: none !important;
 }
 
-
 /*  */
 /*estilos seguro*/
 .container-seguro {
@@ -249,11 +247,10 @@ nav i {
 }
 .item-seguro:nth-child(2) {
   /* margin-left: 1px; */
-    height: 500px;
-    overflow: hidden;
+  height: 500px;
+  overflow: hidden;
 }
 .item-seguro:nth-child(2) {
-  background-color: #f1f2f4;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -754,7 +751,7 @@ a.seguro:hover {
 }
 .info-guillermo-img {
   width: 20%;
-  box-shadow: 0px 3px 26px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 26px 5px rgba(0, 0, 0, 0.75);
 }
 
 .info-guillermo-text {
@@ -1474,14 +1471,13 @@ h6 {
   padding: 10px;
   border: none;
 }
-#tel, #direccion{
+#tel,
+#direccion {
   width: 49%;
   margin: 7px auto;
   padding: 10px;
   border: none;
 }
-
-
 
 textarea {
   width: 100%;
@@ -2646,7 +2642,7 @@ a.ssolink {
   width: 100%;
   height: 100%;
   overflow: auto; /* Permite desplazamiento si el contenido es largo */
-  background-color: rgba(0,0,0,0.4); /* Fondo oscuro con transparencia */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con transparencia */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -2661,12 +2657,12 @@ a.ssolink {
   top: 29%;
   left: 25%;
   max-width: 500px;
-   /* Necesario para posicionar el botón de cerrar */
+  /* Necesario para posicionar el botón de cerrar */
 }
 
 #close {
   position: absolute; /* Posiciona el botón en relación con el contenedor */
- /* Ajusta la distancia desde la parte derecha del contenedor */
+  /* Ajusta la distancia desde la parte derecha del contenedor */
   top: 40%;
   right: 28%;
   color: #ffffff; /* Color del botón de cerrar */
@@ -2681,7 +2677,7 @@ a.ssolink {
   color: rgb(196, 44, 44);
   text-decoration: none;
 }
-      
+
 @keyframes animationLeftRight {
   0% {
     transform: translateX(0px);
@@ -2807,13 +2803,11 @@ a.ssolink {
   }
   .btn-seguros {
     display: contents;
-    gap:15px;
+    gap: 15px;
   }
   .item-seguro:nth-child(2) {
-   
     height: 350px;
-   
-}
+  }
   .container-formulario-datos h2 {
     text-align: left;
     font-size: 35px;
@@ -2830,7 +2824,7 @@ a.ssolink {
   .item-formulario-datos img {
     max-width: 100%;
   }
-  .seguro-dental{
+  .seguro-dental {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -3119,9 +3113,9 @@ a.ssolink {
   }
   .info-guillermo-img {
     width: 80%;
-    box-shadow: 0px 3px 26px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 26px 5px rgba(0, 0, 0, 0.75);
   }
-  
+
   .info-guillermo-text {
     width: 100%;
     text-align: justify;
@@ -3427,7 +3421,7 @@ a.ssolink {
     display: none;
   }
 
-  .logo_blanco{
+  .logo_blanco {
     display: block;
     max-width: 30%;
   }
@@ -3494,9 +3488,9 @@ a.ssolink {
   .menu .dropdown-menu {
     display: block;
     height: 100%;
-    position: static; 
-    background-color: transparent; 
-    box-shadow: none; 
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
     text-align: center;
   }
 
@@ -3505,7 +3499,7 @@ a.ssolink {
   }
 
   .menu .dropdown-menu a {
-    color: #fff; 
+    color: #fff;
     padding: 0;
   }
 
@@ -4473,7 +4467,7 @@ a.ssolink {
     width: 20%;
     z-index: 999;
   }
- 
+
   .contact_uno {
     background-color: green;
     width: 180px;
