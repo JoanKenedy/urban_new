@@ -1,0 +1,292 @@
+.titulos {
+  margin-top: 60px;
+  width: 100%;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #1161a0;
+  margin-bottom: 20px;
+}
+
+.titulos h4 {
+  text-align: center;
+  color: #0082c9;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.introduccion {
+  padding: 30px 20px;
+  width: 100%;
+  position: relative;
+  background-image: url('../imagenes/casos/casos-fondo-1.webp');
+  background-size: cover;
+  background-position: top;
+}
+
+.introduccion::after {
+  content: '';
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(14, 71, 146, 0.63);
+  z-index: 1;
+}
+
+
+.introduccion-text {
+  position: relative;
+  color: #fff;
+  text-align: justify;
+  z-index: 2;
+}
+
+/*  */
+
+.casos {
+  box-sizing: border-box;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.casos-title {
+  text-align: center;
+  color: #1161a0;
+}
+
+.casos-slider {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.prev-videos:after,
+.next-videos:after {
+  color: #fff !important;
+  font-size: 30px !important;
+}
+
+
+
+.swiper-slide-video.swiper-slide-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-image {
+  width: 100%;
+}
+
+.swiper-slide video {
+  width: 100%;
+  max-width: 100%;
+}
+
+.swiper-slide-caso {
+  width: 100%;
+}
+
+.casos-container {
+  display: none;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.video-container h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1161a0;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*  */
+
+.cta{
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+}
+
+.cta-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-content h2 {
+  color: #1161a0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #555;
+  text-align: center;
+}
+
+.cta-content--strong {
+  color: #0082c9;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (min-width: 767px) {
+  .titulos {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 55px;
+    padding: 20px;
+  }
+
+  .titulos h4 {
+    width: 70%;
+    font-size: 30px;
+  }
+
+  .introduccion {
+    padding: 120px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .introduccion:after {
+    padding: 90px 30px;
+  }
+
+  .introduccion-text {
+    width: 70%;
+    font-size: 25px;
+  }
+
+  .casos-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+
+  .casos-slider{
+    display: none !important;
+  }
+
+  .casos-container {
+    /* box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+  }
+
+  .casos-item {
+    /* width: 100%;
+    height: 300px;
+    max-height: 100%;
+    background-size: cover;
+    border: 1px solid #000; */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    height: 300px;
+    max-height: 300px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .casos-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* .item-1 {
+    background-image: url("../imagenes/casos/casos-1.webp");
+  }
+
+  .item-2 {
+    background-image: url("../imagenes/casos/casos-2.webp");
+  }
+
+  .item-3 {
+    background-image: url("../imagenes/casos/casos-3.webp");
+  }
+
+  .item-4 {
+    background-image: url("../imagenes/casos/casos-4.webp");
+  }
+
+  .item-6 {
+    background-image: url("../imagenes/casos/casos-6.webp");
+  } */
+
+
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 50px 100px;
+  }
+
+  .video-container h2 {
+    font-size: 45px;
+  }
+
+  .video-container video {
+
+  }
+
+
+  .cta-content p {
+    width: 60%;
+  }
+
+}
