@@ -20,6 +20,73 @@
 
   object-fit: cover;
 }
+.seccion-ventajas-implantes {
+  width: 100%;
+  margin: auto;
+  background-color: #0082c9;
+}
+.seccion-ventajas-implantes h2 {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.seccion-ventajas-implantes p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding: 0px 15px;
+  text-align: justify;
+}
+.container-ventajas-implantes {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.item-ventajas ul li {
+  text-align: justify;
+  color: white;
+}
+.item-ventajas ul li strong {
+  color: white;
+  font-size: 17px;
+}
+.item-ventajas ul li {
+  font-size: 15px;
+}
+.secion-question {
+  width: 100%;
+  margin: auto;
+}
+.container-question {
+  width: 85%;
+  margin: auto;
+}
+.container-question h2 {
+  text-align: center;
+}
+.container-question p {
+  text-align: justify;
+}
+.galery-trabajo {
+  width: 100%;
+  margin: auto;
+}
+.galery-trabajo h2 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.container-trabajo {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px 0px;
+}
+.item-galery-trabajo img {
+  max-width: 100%;
+}
 
 @media (min-width: 767px) {
   .about-implantes {
@@ -32,20 +99,107 @@
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 0px;
+    gap: 50px;
   }
   .item-about-implantes img {
     width: 500px;
     height: 450px;
     object-fit: cover;
+    border-radius: 12px;
   }
   .item-about-implantes:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+  }
+  .item-about-implantes:nth-child(1) h2 {
+    font-size: 35px !important;
+    text-align: left;
+  }
+  .item-about-implantes:nth-child(1) p {
+    font-size: 16px;
   }
   .item-about-implantes:nth-child(2) {
     display: flex;
     justify-content: end;
+  }
+  .seccion-ventajas-implantes {
+    width: 100%;
+    margin: auto;
+    background-color: #0082c9;
+    padding: 45px 0px;
+  }
+  .seccion-ventajas-implantes h2 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+  }
+  .seccion-ventajas-implantes p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 0px 50px;
+    text-align: center;
+    font-size: 17px;
+  }
+  .container-ventajas-implantes {
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .item-ventajas ul li strong {
+    color: white;
+    font-size: 20px;
+  }
+  .item-ventajas ul li {
+    font-size: 16px;
+    margin: 12px auto;
+  }
+  .item-ventajas ul li::marker {
+    font-size: 25px;
+  }
+  .container-question {
+    width: 80%;
+    margin: auto;
+    padding: 65px;
+  }
+  .container-question h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .container-question p {
+    text-align: justify;
+    font-size: 17px;
+  }
+  .galery-trabajo {
+    width: 100%;
+    margin: auto;
+    background-color: #0082c9;
+    padding: 20px 0px;
+  }
+  .galery-trabajo h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .container-trabajo {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0px;
+  }
+  .item-galery-trabajo img {
+    max-width: 100%;
+    transition: all 1s ease-in;
+  }
+  .item-galery-trabajo img:hover {
+    transform: scale(0.9);
+    transition: all 1s ease-in;
   }
 }
