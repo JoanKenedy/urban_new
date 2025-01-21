@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prospecto de Cliente </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prospecto de Cliente</title>
     <!-- Meta Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '295640356872578');
-        fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "295640356872578");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=295640356872578&ev=PageView&noscript=1" /></noscript>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=295640356872578&ev=PageView&noscript=1"
+    /></noscript>
     <!-- End Meta Pixel Code -->
-</head>
+  </head>
 
-<body style="font-family: 'Poppins', Arial, sans-serif">
+  <body style="font-family: 'Poppins', Arial, sans-serif">
     <table width="100%" cellspacing="0" cellpadding="0">
-        <tr>
-            <td style="padding: 20px;">
-                <table class="content" width="600" cellspacing="0" cellpadding="0"
-                    style="border-collapse: collapse; border: 1px solid #cccccc;">
-                    <!-- Header -->
-                    <tr>
-                        <td class="header"
-                            style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
-                            Prospecto de Cliente
-                        </td>
-                    </tr>
+      <tr>
+        <td style="padding: 20px">
+          <table
+            class="content"
+            width="600"
+            cellspacing="0"
+            cellpadding="0"
+            style="border-collapse: collapse; border: 1px solid #cccccc"
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                class="header"
+                style="
+                  background-color: #345c72;
+                  padding: 40px;
+                  text-align: center;
+                  color: white;
+                  font-size: 24px;
+                "
+              >
+                Prospecto de Cliente
+              </td>
+            </tr>
 
-                    <!-- Body -->
-                    <tr>
-                        <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                            Hola Dr. Guillermo Urban <br>
+            <!-- Body -->
+            <tr>
+              <td
+                class="body"
+                style="
+                  padding: 40px;
+                  text-align: left;
+                  font-size: 16px;
+                  line-height: 1.6;
+                "
+              >
+                Hola Dr. Guillermo Urban <br />
 
+                <br /><br />
 
-                            <br><br>
+                Soy %nombre% el motivo por el que me contacto es por que
+                %mensaje% .
+              </td>
+            </tr>
+            <!-- Call to action Button -->
 
-                            Soy %nombre% el motivo por el que me contacto es por que %mensaje% .
-                        </td>
-                    </tr>
-                    <!-- Call to action Button -->
-
-                    <tr>
-                        <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                            Mi direccion es: %direccion% <br>
-                            Mi correo es: %email% <br>
-                            Mi numero es: %tel% <br>
-                        </td>
-                    </tr>
-                    <!-- Footer -->
-                    <tr>
-                        <td class="footer"
-                            style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 14px;">
-                            | By DENTARIOS |
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+            <tr>
+              <td
+                class="body"
+                style="
+                  padding: 40px;
+                  text-align: left;
+                  font-size: 16px;
+                  line-height: 1.6;
+                "
+              >
+                Mi direccion es: %direccion% <br />
+                Mi correo es: %email% <br />
+                Mi numero es: %tel% <br />
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td
+                class="footer"
+                style="
+                  background-color: #345c72;
+                  padding: 40px;
+                  text-align: center;
+                  color: white;
+                  font-size: 14px;
+                "
+              >
+                | By DENTARIOS |
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
-</body>
-
+  </body>
 </html>
