@@ -24,7 +24,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+  <link rel="stylesheet" href="css/responsive.css">
 
+  <script src="js/script.js"></script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -126,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2>¡Bienvenidos a Urban Sonrie!</h2>
           </div>
           <div class="boton-ver-mas">
-            <a href="#">Ver más</a>
+            <a href="#doctores">Ver más</a>
           </div>
         </div>
       </div>
@@ -141,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           
           <div class="boton-ver-mas">
-            <a href="#">Ver más</a>
+            <a href="#doctores">Ver más</a>
           </div>
         </div>
       </div>
@@ -157,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           
           <div class="boton-ver-mas">
-            <a href="#">Ver más</a>
+            <a href="#doctores">Ver más</a>
           </div>
         </div>
       </div>
@@ -175,7 +177,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
   </div>
-    <div class="container-seguro">
+
+  <section id="container-seguro">
+    <div class="container-seguro" >
       <div class="seguro-dental">
         <div class="item-seguro">
           <img src="./imagenes/seguro-dental.jpg" alt="">
@@ -190,8 +194,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+  </section>
+    
 
-  <section class="parallax_uno">
+  <section class="parallax_uno" id="parallax_uno">
+    <div class="imagen">
+      <img src="imagenes/logo-mobil.png">
+    </div>
     <p data-aos="fade-up" data-aos-duration="1000">
       Somos una clinica con más de 20 años de experiencia que prioriza la higiene y salud dental de nuestros pacientes,
       asi como el diseño de las más bella y estetica sonrisa.
@@ -239,11 +248,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </article>
   </section>
 
-  <div class="about-team">
+  <section class="about-team" id="about-team">
     <div class="plaza-fashion-container">
       <h3 class="plaza-fashion-text">Plaza Tlalne Fashion Mall</h3>
+      <h2>Nuestras instalaciones</h2>
     </div>
-    <h2>Nuestras instalaciones</h2>
     <div class="container-fotos-team">
       <div class="item-container-team">
         <img src="imagenes/urban-1.webp" alt="Fotografía de la Dra. Mónica" />
@@ -271,17 +280,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <div class="slider_marcas">
+  <section class="slider_marcas" id="slider_marcas">
     <div class="efecto_uno">
-      <h2>Nuestras promociones :</h2>
+      <h2>Nuestras promociones</h2>
     </div>
-  
-      
-
-      <div class="contenedor_marcas">
-       
+    <div class="contenedor_marcas">
         <div
           class="item_marcas"
           data-aos="fade-up"
@@ -354,10 +359,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
           <a href="https://api.whatsapp.com/send?phone=525549713883" target="_blank">Contacto</a>
         </div>
-       
-    
     </div>
-  </div>
+  </section>
   <section class="parallax_dos">
     <div class="contenedor-parallax_dos">
       <div class="item">
@@ -376,6 +379,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <section id="ubicacion">
+    <div class="margenes">
+      <div class="texto">
+        <h3>Nuestra ubicación</h3>
+      </div>
+      <div class="contenedor-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.0669686946376!2d-99.2085020257359!3d19.538738237284537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d4eb41ca3d1%3A0xbeea8d419377d100!2sUrban%20Sonr%C3%ADe%20Plaza%20Tlalne!5e0!3m2!1ses-419!2smx!4v1738964106078!5m2!1ses-419!2smx" style="border: solid rgba(128, 128, 128, 0.514) 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
   <div class="slider_marcas_dos">
     <div class="efecto_uno_2">
       <h2>Trabajamos con Marcas de Calidad</h2>
@@ -705,8 +720,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="redes_flotantes">
     <img src="imagenes/icono_principal.png" alt="Icono contacto" class="icono_principal" />
-
-
     <div class="contactos">
       <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=525549713883');"
         href="https://api.whatsapp.com/send?phone=525549713883" class="icono_dos" target="_blank"
@@ -714,9 +727,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <a onclick="return gtag_report_conversion('tel:5549713883');" href="tel:5549713883 " class="icono_dos"
         target="_blank"><img src="imagenes/phone.png" alt="Icono de teléfono" /></a>
-
-
     </div>
+  </div>
+
+  <div id="back-top">
+    <button id="backToTop" title="Volver al inicio" style="display: block;"><i class="fas fa-chevron-up"></i></button>
   </div>
 
   <footer>
@@ -778,10 +793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="item_footer">
-      <p>
-        Urban Sonrie <span id="anio">2021</span> © | Página Desarrollada por
-        <a href="https://dentarios.com.mx/programacion.php">Agencia de Marketing Dentarios ©
-        </a>
+      <p>Urban Sonrie <span id="anio">2025</span> © | Página Desarrollada por <a href="https://dentarios.com.mx"><p>Agencia de Marketing Dentarios ©</p></a>
       </p>
     </div>
   </footer>
