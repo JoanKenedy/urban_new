@@ -34,11 +34,18 @@
     .item_footer span{
         font-size: 13px;
     }
+
+    #portada-nosotros .contenedor-portada h2{
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
     .item_footer span{
         font-size: 13px;
+    }
+    #portada-nosotros .contenedor-portada h2{
+        font-size: 29px;
     }
 }
 
@@ -49,3 +56,24 @@
     margin-right: 10%;
    }
 }
+
+@media screen and (max-width: 768px) {
+
+  #extra p{
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 967px) {
+
+    #extra p{
+      font-size: 15px;
+    }
+
+    #equipo .item_equipo .texto{
+        padding: 10px;
+      }
+}
+  
+
