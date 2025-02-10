@@ -122,6 +122,7 @@ nav i {
   display: none;
 } */
 
+
 header {
   position: fixed;
   top: 0;
@@ -149,7 +150,6 @@ nav .menu {
 }
 
 .menu li {
-  margin-left: 30px;
   list-style: none;
 }
 
@@ -171,7 +171,7 @@ nav .menu {
 
 /* Logo en móviles */
 .logo_blanco {
-  max-width: 60%;
+  max-width: 175px;
   padding-left: 20px;
   display: none;
 }
@@ -225,7 +225,14 @@ nav i {
   font-size: 35px;
   display: none !important;
 }
+#menu li{
+  padding-left: 20px;
 
+}
+
+#dropdown{
+  width: 105px;
+}
 /*  */
 /*estilos seguro*/
 .container-seguro {
@@ -243,8 +250,9 @@ nav i {
 .item-seguro img {
   /* max-width: 100%; */
   height: 100%;
-  width: 100%;
+  width: 85%;
   object-fit: cover;
+  padding-top: 20px;
 }
 .item-seguro:nth-child(2) {
   /* margin-left: 1px; */
@@ -266,6 +274,12 @@ nav i {
   margin: 0;
   color: #0082c9;
 }
+
+.item-seguro {
+  display: flex;
+  justify-content: center;
+}
+
 .btn-seguros {
   display: flex;
   gap: 15px;
@@ -521,6 +535,10 @@ a.seguro {
   background-color: #0082c9; /* Color de fondo por defecto */
   border-radius: 5px; /* Bordes redondeados */
   transition: background-color 0.3s ease;
+  width: 160px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 a.seguro:hover {
   background-color: #0082c9; /* Cambia el color de fondo al hacer hover */
@@ -621,13 +639,13 @@ a.seguro:hover {
 }
 .icono_principal {
   position: fixed;
-  bottom: 4vh;
+  bottom: 85px;
   right: 15px;
   z-index: 5;
   animation: pulse 2s infinite;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
@@ -652,8 +670,8 @@ a.seguro:hover {
   -ms-transform: translateY(100%);
   transform: translateY(100%);
   position: fixed;
-  bottom: 10vh;
-  right: 22px;
+  bottom: 163px;
+  right: 14px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -669,8 +687,8 @@ a.seguro:hover {
 }
 .aparecer {
   position: fixed;
-  bottom: 14vh;
-  right: 22px;
+  bottom: 163px;
+  right: 14px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -728,8 +746,7 @@ a.seguro:hover {
 }
 .miSlider img {
   width: 100%;
-  height: 90vh;
-  height: inherit;
+  height: 70vh;
   -o-object-fit: cover;
   object-fit: cover;
   vertical-align: top;
@@ -762,40 +779,50 @@ a.seguro:hover {
   margin-right: 50px;
 }
 
+
+#doctores{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  background-color: #f3f3f3;
+}
+
+@media (min-width: 752px) and (max-width: 1424px){
+  #doctores{
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+  #doctores .especialidades{
+    justify-content: space-evenly;
+  }
+}
+
 .doctores {
   width: 100%;
 }
 .doctores h2 {
   font-size: 40px;
-  margin-top: 20px;
-  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 /*especialidades*/
 .especialidades {
-  width: 90%;
-  margin: 25px auto;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .item-especialidades {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
   background-color: #0082c9;
-  width: 100%;
-  padding: 40px 20px;
+  width: 220px;
+  height: 270px;
   gap: 10px;
-  transition: all 0.7s;
-}
-.item-especialidades:hover {
-  transform: scale(0.9);
-  transition: all 0.7s;
 }
 
 .item-especialidades h3 {
@@ -803,7 +830,7 @@ a.seguro:hover {
   font-size: 20px;
 }
 .item-especialidades a {
-  transition: all 0.7s;
+  transition: all 0.3s;
   display: block;
   width: 200px;
   background-color: #444444;
@@ -814,13 +841,15 @@ a.seguro:hover {
   border-radius: 7px;
 }
 .item-especialidades a:hover {
-  transition: all 0.7s;
+  transition: all 0.3s;
   background-color: white;
   color: #444444;
+  font-weight: 600;
+  transform: scale(1.05);
 }
 .div_image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   background-color: white;
   border-radius: 50%;
@@ -1178,12 +1207,7 @@ a.seguro:hover {
   text-align: center;
   padding: 50px;
 }
-.slider_marcas {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  overflow-x: hidden;
-}
+
 .slider_marcas h2 {
   color: #1161a0;
   font-size: 45px;
@@ -1253,7 +1277,7 @@ a.seguro:hover {
   align-items: center;
   margin: auto;
   position: relative;
-  height: 170px;
+  height: 200px;
 }
 .slider_marcas_dos h2 {
   color: #1161a0;
@@ -1391,7 +1415,7 @@ a.seguro:hover {
   align-items: center;
   flex-wrap: wrap;
   background-color: #1161a0;
-  padding: 10px;
+  padding: 20px;
   height: 300px;
 }
 .test-1 {
@@ -1444,7 +1468,7 @@ h6 {
   color: #fff;
 }
 .sub_item_testimonios .fa-star {
-  font-size: 15px;
+  font-size: 25px;
   color: gold;
 }
 .sub_item_testimonios h6 {
@@ -1471,8 +1495,7 @@ h6 {
   padding: 10px;
   border: none;
 }
-#tel,
-#direccion {
+#tel, #direccion, #ciudad {
   width: 49%;
   margin: 7px auto;
   padding: 10px;
@@ -1500,7 +1523,7 @@ form button {
 }
 footer {
   width: 100%;
-  background-color: #555555;
+  background-color: #161616;
   position: relative;
   bottom: 0;
   left: 0;
@@ -1574,7 +1597,7 @@ footer {
   font-size: 17px;
 }
 .item_footer:nth-child(2) {
-  background-color: #444444;
+  background-color: black;
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -1646,7 +1669,7 @@ footer {
 .equipo {
   width: 100%;
   margin: auto;
-  background-color: #dbd5d585;
+  background-color: #f3f3f3;
 }
 .contenedor_equipo {
   width: 85%;
@@ -2344,7 +2367,7 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
   padding: 15px;
   transition: all 0.6s;
 }
@@ -2467,10 +2490,9 @@ footer {
   width: 100% !important;
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
-  color: #1a1f36;
   box-sizing: border-box;
   word-wrap: break-word;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -2547,7 +2569,6 @@ footer {
     rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 span {
-  display: block;
   font-size: 20px;
   line-height: 28px;
   color: #1a1f36;
@@ -2794,8 +2815,13 @@ a.ssolink {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 967px) {
+
   /*FORMULARIO*/
+
+  #menu li{
+    padding-left: 0;
+  }
   .container-formulario-datos {
     width: 100%;
   }
@@ -2809,7 +2835,7 @@ a.ssolink {
     gap: 15px;
   }
   .item-seguro:nth-child(2) {
-    height: 350px;
+    height: 100%;
   }
   .container-formulario-datos h2 {
     text-align: left;
@@ -3126,9 +3152,9 @@ a.ssolink {
   }
 
   .doctores h2 {
-    font-size: 35px;
+    font-size: 28px;
     margin-top: 20px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -3234,11 +3260,11 @@ a.ssolink {
   }
   /*especialidades*/
   .especialidades {
-    width: 85%;
     margin: 25px auto;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
   .item-especialidades {
@@ -3246,11 +3272,10 @@ a.ssolink {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: auto;
     background-color: #0082c9;
+    max-width: 400px;
     width: 100%;
-    padding: 10px 10px;
-    gap: 0px;
+    margin-bottom: 20px;
   }
   .item-especialidades h3 {
     color: white;
@@ -3287,7 +3312,7 @@ a.ssolink {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3334,13 +3359,13 @@ a.ssolink {
   }
   .slide_contenedor {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 85vh;
     width: 100%;
     height: auto;
     position: relative;
     overflow: hidden;
     /*margin: auto;*/
-    margin: 55px auto 0px auto;
+    margin: 50px auto 0px auto;
     background-size: cover;
     z-index: 1;
     top: auto;
@@ -3426,7 +3451,7 @@ a.ssolink {
 
   .logo_blanco {
     display: block;
-    max-width: 30%;
+    max-width: 175px;
   }
 
   header {
@@ -3457,7 +3482,7 @@ a.ssolink {
     align-items: center;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
+    width: 60%;
     top: 100%;
     height: 100vh;
     left: -100%;
@@ -3471,7 +3496,6 @@ a.ssolink {
   }
 
   .menu li {
-    margin-left: 10px;
     margin-top: 25px;
     list-style: none;
   }
@@ -3527,12 +3551,7 @@ a.ssolink {
     background-color: #002c89;
     min-height: 100vh;
   }
-  .icono_principal {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    right: 10px;
-  }
+
   .contenido_post p {
     color: #fff;
     font-size: 16px;
@@ -3554,8 +3573,8 @@ a.ssolink {
     cursor: pointer;
   }
   .contactos {
-    right: 15px;
-    bottom: 12vh;
+    right: 14px;
+    bottom: 163px;
   }
   .contactos img {
     width: 65px;
@@ -3698,6 +3717,26 @@ a.ssolink {
     justify-content: center;
     align-items: center;
   }
+  p.aos-init.aos-animate {
+    font-size: 19px;
+}
+.parallax_dos .contenedor-parallax_dos .item{
+  display: flex;
+  justify-content: center;
+}
+
+.parallax_dos .contenedor-parallax_dos .item img{
+  width: 220px;
+}
+
+
+.parallax_dos .contenedor-parallax_dos .item a{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.205);
+  padding: 12px;
+  border-radius: 10px;
+}
+
   .parallax_uno p {
     color: #fff;
     font-size: 15px;
@@ -3845,6 +3884,7 @@ a.ssolink {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
   }
+ 
   .efecto_equipo h2 {
     text-align: center;
     color: #1161a0;
@@ -4129,18 +4169,11 @@ a.ssolink {
 }
 @media (max-width: 480px) {
   .logo_blanco {
-    max-width: 40%;
+    max-width: 175px;
     padding-left: 20px;
     display: block;
   }
-  .icono_principal {
-    position: fixed;
-    bottom: 3vh;
-    right: 12px;
-    z-index: 5;
-    animation: pulse 2s infinite;
-    border-radius: 50%;
-  }
+
   .modal_inicio {
     display: flex;
     flex-direction: column;
@@ -4171,7 +4204,7 @@ a.ssolink {
     margin-bottom: 20px;
   }
   .menu {
-    top: 55px;
+    top: 69px;
   }
   .contenido_post p {
     color: #fff;
@@ -4308,7 +4341,7 @@ a.ssolink {
 }
 @media (max-width: 380px) {
   .logo_blanco {
-    max-width: 45%;
+    max-width: 175px;
     padding-left: 20px;
     display: block;
   }
@@ -4332,7 +4365,7 @@ a.ssolink {
     font-size: 14px;
   }
   .menu {
-    top: 55px;
+    top: 69px;
   }
   .mobile {
     height: 100%;
@@ -4562,3 +4595,330 @@ a.ssolink {
     font-size: 13px;
   }
 }
+
+#slide_contenedor .container-body-text .boton-ver-mas {
+  padding-top: 30px;
+}
+
+#slide_contenedor .container-body-text .boton-ver-mas a{
+  background-color: #01a88f;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+
+#slide_contenedor .container-body-text .boton-ver-mas a {
+  display: inline-block; /* Asegura que los enlaces se comporten como botones */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#slide_contenedor .container-body-text .boton-ver-mas a:hover {
+  background-color: #00bea5;
+  transform: scale(1.05);
+}
+
+
+
+#backToTop {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #221997;
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backToTop:hover {
+  background-color: #2c8ebb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+#slide_contenedor .container-text{
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 85vh;
+}
+
+
+
+#slide_contenedor{
+  padding-top: 19px;
+}
+@media (min-width: 968px) {
+  #slide_contenedor{
+    padding-top: 0px;
+  }
+  
+}
+#slide_contenedor .miSlider img {
+  width: 100%;
+  height: 85vh;
+}
+
+#parallax_uno{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#container-seguro{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30px;
+}
+
+#parallax_uno  p{
+  text-align: left;
+  max-width: 1200px;
+}
+
+#parallax_dos .contenedor-parallax_dos .item a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.205);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+
+.parallax_dos .contenedor-parallax_dos .item {
+  display: flex;
+  justify-content: center;
+}
+
+.parallax_dos .contenedor-parallax_dos .item img {
+  width: 220px;
+}
+
+.parallax_dos .contenedor-parallax_dos .item a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.205);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.contenedor-parallax_dos .item{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media (min-width: 610px) and (max-width: 1110px) {
+
+  #doctores{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #doctores .especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  #doctores .item-especialidades{
+    width: 210px;
+    margin: 20px;
+  }
+}
+
+#about-team .plaza-fashion-container{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+#slider_marcas{
+  background-color: #f3f3f3;
+  padding-bottom: 30px;
+}
+
+#slider_marcas .efecto_uno h2{
+  text-align: center;
+}
+
+#slider_marcas .efecto_uno{
+  padding-top: 30px;
+}
+
+.parallax_dos .contenedor-parallax_dos .item a{
+  transition: 0.3s ease-in-out;
+}
+.parallax_dos .contenedor-parallax_dos .item a:hover{
+  transform: scale(1.1);
+}
+
+.contenedor_marcas{
+  overflow-x: unset;
+}
+
+#parallax_uno{
+  overflow-x: unset;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-size: cover;
+}
+
+#parallax_uno .imagen img{
+  width: 200px;
+}
+
+.slider_marcas_dos{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.slider_marcas_dos h2{
+  text-align: center;
+}
+
+#ubicacion{
+  background-color: #f3f3f3;
+}
+
+#ubicacion .margenes{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#ubicacion .contenedor-mapa{
+  display: flex;
+  justify-content: center;
+}
+
+#ubicacion .contenedor-mapa iframe{
+  width: 90%;
+  height: 350px;
+  border-radius: 10px;
+  border: solid black 3px;
+}
+
+#ubicacion .texto h3{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/*----------------Nosotros HTML----------------------------*/
+#portada-nosotros .contenedor-portada {
+  display: flex;
+  background-image: url(../imagenes/nosotros-urban.jpg);
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+  margin-top: 63px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#portada-nosotros .contenedor-portada h2{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#extra h2{
+  text-align: center;
+  color: #0000c6;
+}
+
+#extra{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#extra p{
+  text-align: left;
+  font-size: 18px;
+}
+
+#equipo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#equipo .item_equipo .texto{
+  padding: 30px;
+}
+
+#galeria_trabajo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f3f3f3;
+}
+
+#mision .item-mision{
+    box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
+}
+
+#mision .item-mision p{
+  max-width: 90%;
+}
+
+#mision{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+#equipo {
+  overflow-x: unset;
+}
+
+
+#atencion{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#atencion .menu_desplegable{
+  overflow-x: unset;
+}
+
+#atencion .btn_despega{
+  background-color: #0082c9;
+  margin-top: 20px;
+  box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
+}
+
+#atencion .btn_despega h6{
+  color: white;
+}
+
+#atencion .flecha{
+  color: white;
+}
+
+#atencion .sub_menu li{
+  text-align: left;
+}
+
+
+/*----------------Nosotros HTML----------------------------*/
