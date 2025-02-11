@@ -60,3 +60,22 @@
     }
 })();
 
+//js en servicios.html
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('video-background');
+      var img = video.querySelector('img');
+      
+      // Intentamos cargar el video
+      video.oncanplay = function() {
+        // Si el video se puede reproducir, lo mostramos
+        img.style.display = 'none';  // Escondemos la imagen
+      };
+  
+      video.onerror = function() {
+        // Si hay un error (por ejemplo, el video no puede ser cargado), mostramos la imagen
+        img.style.display = 'block';  // Mostramos la imagen
+      };
+    });
+  })();
+  

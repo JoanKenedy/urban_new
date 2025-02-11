@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,7 +71,8 @@
   </head>
   <body>
 
-     <header>
+    <script src="js/script.js"></script>
+<header>
     <nav>
       <img src="imagenes/urba-sonrie.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
       <img src="imagenes/logo-mobil.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
@@ -116,8 +117,28 @@
       <i class="fa-solid fa-bars-staggered abrirmenu"></i>
     </nav>
   </header>
+
+  <style>
+
+
+  </style>
+
+  <section id="portada-video">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="video/servicios.mp4" type="video/mp4">
+        <img src="imagenes/foto-1.jpg" alt="Imagen de fondo">
+      </video>
+    </div>
+    <!-- Aquí puedes agregar contenido encima del video si es necesario -->
+    <div class="contenido">
+      <h1>Bienvenido a nuestra página</h1>
+      <p>Texto encima del video de fondo</p>
+    </div>
+  </section>
   
-    
+  
+  <section id="servicios-portada">
     <div class="imagen_fondo">
       <div class="img_fondo" data-aos="fade-right" data-aos-duration="1000">
         <h2>Servicios</h2>
@@ -139,6 +160,9 @@
         
       </div>
     </div>
+  </section>
+    
+    
 
     <section class="parallax_extra">
       <p data-aos="fade-up" data-aos-duration="1000">
@@ -400,6 +424,11 @@
        
       </div>
     </div>
+
+    <div id="back-top">
+      <button id="backToTop" title="Volver al inicio" style="display: block;"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
   <footer>
       <div class="item_footer">
         <div class="sub_item_footer">
