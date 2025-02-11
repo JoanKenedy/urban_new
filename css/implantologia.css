@@ -94,12 +94,13 @@
     margin: auto;
   }
   .container-about-implantes {
-    width: 70%;
+    width: 90vw;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 0px;
     gap: 50px;
+    align-items: center;
   }
   .item-about-implantes img {
     width: 500px;
