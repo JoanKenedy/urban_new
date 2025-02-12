@@ -1007,9 +1007,7 @@ a.seguro:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
-.item_equipo_dos img {
-  max-width: 70%;
-}
+
 .contenido_post a:hover {
   border: solid 3px #1161a0;
   background-color: transparent;
@@ -1257,12 +1255,15 @@ a.seguro:hover {
   background-position: center;
   width: 100%;
   height: 450px;
-
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+
+
 }
 .parallax_dos p {
   color: #fff;
@@ -1705,20 +1706,10 @@ footer {
 .item_equipo:nth-child(2) p {
   text-align: justify;
 }
-.contenedor_equipo_dos {
-  width: 85%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: auto;
-  text-align: center;
-  grid-gap: 20px;
-  padding: 10px 0px;
-}
-.item_equipo_dos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+
+.item_equipo_dos img {
+width: 8vw;
+
 }
 /*.item_promocion:nth-child(4){
   grid-column: 2/3;
@@ -2228,7 +2219,6 @@ footer {
 .equipo h2 {
   margin: 0;
   font-size: 45px;
-  padding-top: 20px;
   color: #444444;
   font-weight: 800;
   text-transform: uppercase;
@@ -2393,6 +2383,7 @@ footer {
   margin: 0;
   font-size: 50px;
   padding-top: 20px;
+  padding-bottom: 30px;
   color: #444444;
   font-weight: 800;
   text-transform: uppercase;
@@ -3931,7 +3922,6 @@ a.ssolink {
   }
   .item_equipo_dos {
     margin: 20px auto;
-    height: 300px;
   }
   .item_equipo:nth-child(1) h2 {
     color: #1161a0;
@@ -4986,8 +4976,9 @@ a.ssolink {
 #portada-video {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ajusta el alto al tamaño de la ventana */
+  height: 90vh; /* Ajusta el alto al tamaño de la ventana */
   overflow: hidden; /* Asegura que el video o la imagen no se desborden */
+  margin-top: 72px;
 }
 
 .video-container {
@@ -5015,4 +5006,72 @@ video, .video-container img {
   z-index: 1;
 }
 
+#portada-video .contenido .img_fondo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#portada-video{
+  background-color: rgba(0, 0, 0, 0.498);
+}
+
+.parallax_extra{
+  margin-top: 0;
+}
+
+
+#servicios-paralax_extra{
+  background-image: url(../imagenes/pacientes-unicos.jpg);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#especialidades_nosotros{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+#contenedor_equipo_dos .item .contenedor-imagen{
+  display: flex;
+  justify-content: center;
+}
+
+#contenedor_equipo_dos .item .contenedor-imagen img{
+  width: 8vw;
+}
+
+#contenedor_equipo_dos .item{
+  background-color: rgb(233, 233, 233);
+  width: 20vw;
+  padding: 20px;
+  margin: 10px;
+}
+
+#contenedor_equipo_dos .item p{
+  text-align: left;
+}
+
+#contenedor_equipo_dos .item h5{
+  text-align: center;
+}
+
+#contenedor_equipo_dos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#servicios_about-team{
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#servicios-estudios{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 /*-----------------Servicios HTML----------------------------*/
