@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,7 +71,8 @@
   </head>
   <body>
 
-     <header>
+    <script src="js/script.js"></script>
+<header>
     <nav>
       <img src="imagenes/urba-sonrie.png" alt="Logo Principal de Orthodentic" class="logo_ortho" />
       <img src="imagenes/logo-mobil.png" alt="Logo Principal de Orthodentic" class="logo_blanco" />
@@ -116,145 +117,101 @@
       <i class="fa-solid fa-bars-staggered abrirmenu"></i>
     </nav>
   </header>
-  
-    
-    <div class="imagen_fondo">
+
+
+  <section id="portada-video">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="video/servicios.mp4" type="video/mp4">
+        <img src="imagenes/foto-1.jpg" alt="Imagen de fondo">
+      </video>
+    </div>
+    <!-- Aquí puedes agregar contenido encima del video si es necesario -->
+    <div class="contenido">
       <div class="img_fondo" data-aos="fade-right" data-aos-duration="1000">
-        <h2>Servicios</h2>
-        <p>
-          Para conseguir el éxito la primera norma es tan sencilla, <br />
-          como aprender a sonreír.
-        </p>
-        <p>Deja tu sonrisa en manos profesionales.</p>
-        <a
-          href="https://api.whatsapp.com/send?phone=528115383937"
-          target="_blank"
-          >Contacto</a
-        >
-      </div>
-      <div class="img_fondo" >
-        <div class="caja-video">
-          <video src="video/servicios.mp4" autoplay loop ></video>
+        <h1>Clinica Dental Urban en Tlalnepantla</h1>
+        <h2>Odontología profesional de alta calidad</h2>
+        <p>En nuestra clínica, te ofrecemos servicios de alta calidad para cuidar tu salud. Nuestro equipo de expertos con alta ética de trabajo, te brindaran el mejor servicio. ¡Agenda tu cita ahora!</p>
+
+        <div class="boton-ver-mas">
+          <a href="#especialidades_nosotros">Ver más</a>
         </div>
-        
+
       </div>
     </div>
-
-    <section class="parallax_extra">
-      <p data-aos="fade-up" data-aos-duration="1000">
-        Cada paciente es único y recibe un plan de tratamiento de acuerdo al
-        diagnóstico o enfermedad que presente, y sobre todo las necesidades
-        específicas de cada paciente. El tratamiento se realiza con base a un
-        diagnóstico personalizado.
-      </p>
-    </section>
+  </section>
+  
     
-    <section class="equipo">
-   
-    
- 
+  <section class="equipo" id="especialidades_nosotros">
+    <div>
       <h2>Especialidades</h2>
-      <div class="contenedor_equipo_dos">
-        
-        <div class="item_equipo_dos">
-          <img
-            src="imagenes/maxilofacial-orthodentic.png"
-            alt=""
-            class="img-especialidad"
-          />
+    </div>
+    
+    <div class="contenedor_equipo_dos" id="contenedor_equipo_dos">
+      <div class="item">
+        <div class="contenedor-imagen">
+          <img src="imagenes/maxilofacial-orthodentic.png" alt="" class="img-especialidad"/>
         </div>
-        <div
-          class="item_equipo_dos"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div>
+        <div class="item_equipo_dos" data-aos="fade-up" data-aos-duration="1000">
             <h5>Cirugía Maxilofacial</h5>
             <span class="profesion_dos"></span>
-            <p>
-              La cirugía maxilofacial es la especialidad médico-quirúrgica que
+            <p>La cirugía maxilofacial es la especialidad médico-quirúrgica que
               se centra en el estudio, diagnóstico, tratamiento y rehabilitación
               de las enfermedades congénitas o adquiridas de la cavidad oral, el
-              esqueleto facial y las estructuras cervicales relacionadas
-            </p>
-          </div>
+              esqueleto facial y las estructuras cervicales relacionadas</p>
         </div>
-        <div class="item_equipo_dos">
-          <img
-            src="imagenes/ortodoncia-2.png"
-            alt=""
-            class="img-especialidad"
-          />
-        </div>
-        <div
-          class="item_equipo_dos"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div>
-            <h5>Ortodoncia</h5>
-            <span class="profesion_dos"></span>
-            <p>
-              La ortodoncia es la rama de la odontología que se encarga de los problemas de los dientes y la mandíbula.
-
-              La atención dental con ortodoncia incluye el uso de dispositivos, tales como los aparatos (frenos), para: Enderezar los dientes, Corregir problemas con la mordida,  Cerrar los espacios entre los dientes,  Alinear adecuadamente los labios y los dientes 
-              
-             
-             
-            </p>
-          </div>
-        </div>
-        <div class="item_equipo_dos">
-          <img
-            src="imagenes/implantologia-orthodentic.png"
-            alt=""
-            class="img-especialidad"
-          />
-        </div>
-        <div
-          class="item_equipo_dos"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div>
-            <h5> Implantólogía</h5>
-            <span class="profesion_dos"></span>
-            <p>
-              La implantología dental es una disciplina odontológica que se dedica al reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante dental en el maxilar o la mandíbula. A día de hoy se considera una de las técnicas más eficaces de rehabilitación dental.
-            </p>
-          </div>
-        </div>
-  
-      
-        <div class="item_equipo_dos">
-          <img
-            src="imagenes/endodoncia-orthodentic.png"
-            alt=""
-            class="img-especialidad"
-          />
-        </div>
-        <div
-          class="item_equipo_dos"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div>
-            <h5>Endodoncia</h5>
-
-            <p>
-              Gracias a sus conocimientos y habilidades para tratar las lesiones
-              en la pulpa dental, los endodoncistas están especializados en
-              aliviar el dolor y mantener los dientes en la boca de los
-              pacientes, para que mantengan sus piezas naturales en la boca.
-              Además, en muchas ocasiones, una endodoncia es el paso previo a
-              una extracción.
-            </p>
-          </div>
-        </div>
-      
-      
       </div>
-    </section>
+
+      <div class="item">
+        <div class="contenedor-imagen">
+          <img src="imagenes/ortodoncia-2.png" alt="" class="img-especialidad"/>
+        </div>
+        <div class="item_equipo_dos" data-aos="fade-up" data-aos-duration="1000">
+          <h5>Ortodoncia</h5>
+          <span class="profesion_dos"></span>
+          <p>
+            La ortodoncia es la rama de la odontología que se encarga de los problemas de los dientes y la mandíbula.
+          </p>
+          <p>
+            La atención dental con ortodoncia incluye el uso de dispositivos, tales como los aparatos (frenos), para: Enderezar los dientes, Corregir problemas con la mordida,  Cerrar los espacios entre los dientes,  Alinear adecuadamente los labios y los dientes 
+          </p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="contenedor-imagen">
+          <img src="imagenes/implantologia-orthodentic.png" alt="" class="img-especialidad"/>
+        </div>
+        <div class="item_equipo_dos" data-aos="fade-up" data-aos-duration="1000">
+          <h5> Implantólogía</h5>
+          <span class="profesion_dos"></span>
+          <p>
+            La implantología dental es una disciplina odontológica que se dedica al reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante dental en el maxilar o la mandíbula. A día de hoy se considera una de las técnicas más eficaces de rehabilitación dental.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="contenedor-imagen">
+          <img src="imagenes/endodoncia-orthodentic.png" alt="" class="img-especialidad"/>
+        </div>
+        <div class="item_equipo_dos" data-aos="fade-up" data-aos-duration="1000">
+          <h5>Endodoncia</h5>
+          <p>
+            Gracias a sus conocimientos y habilidades para tratar las lesiones
+            en la pulpa dental, los endodoncistas están especializados en
+            aliviar el dolor y mantener los dientes en la boca de los
+            pacientes, para que mantengan sus piezas naturales en la boca.
+            Además, en muchas ocasiones, una endodoncia es el paso previo a
+            una extracción.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="servicios-estudios">
     <div class="estudios">
       <h2>Estudios y Tratamientos</h2>
       <div class="container-estudios">
@@ -286,7 +243,18 @@
        
       </div>
     </div>
-    <div class="about-team">
+  </section>
+
+  <section class="parallax_extra" id="servicios-paralax_extra">
+    <p data-aos="fade-up" data-aos-duration="1000">
+      Cada paciente es único y recibe un plan de tratamiento de acuerdo al
+      diagnóstico o enfermedad que presente, y sobre todo las necesidades
+      específicas de cada paciente. El tratamiento se realiza con base a un
+      diagnóstico personalizado.
+    </p>
+  </section>
+    
+    <div class="about-team" id="servicios_about-team">
       <h2>Nuestras instalaciones</h2>
       <div class="container-fotos-team">
         <div class="item-container-team">
@@ -317,7 +285,7 @@
       </div>
     </div>
     
-    <section class="atencion">
+    <section class="atencion" id="atencion">
       <h2>¿Por qué atenderte con nosotros?</h2>
       <div class="menu_desplegable">
         <div class="btn_despega">
@@ -360,7 +328,7 @@
             </li>
           </ul>
         </div>
-       
+  
         <div class="btn_despega">
           <h6>Formas de pago</h6>
           <i class="fas fa-chevron-down flecha"></i>
@@ -369,12 +337,14 @@
           <ul class="sub_menu">
             <li>
               Contamos con diferentes formas de pago. Aceptamos TODAS las
-              tarjetas de crédito y débito. 
+              tarjetas de crédito y débito.
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+
         <div class="redes_flotantes">
       <img src="imagenes/icono_principal.png" alt="Icono contacto" class="icono_principal" />
     
@@ -400,6 +370,11 @@
        
       </div>
     </div>
+
+    <div id="back-top">
+      <button id="backToTop" title="Volver al inicio" style="display: block;"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
   <footer>
       <div class="item_footer">
         <div class="sub_item_footer">

@@ -75,5 +75,32 @@
         padding: 10px;
       }
 }
-  
+
+@media screen and (max-width: 768px) {
+    #contenedor_equipo_dos{
+        flex-direction: column;
+    }
+    #contenedor_equipo_dos .item{
+        width: 80vw;
+    }
+
+    #contenedor_equipo_dos .item .contenedor-imagen img{
+        width: 150px;
+    }
+
+    .item_equipo_dos{
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1268px) {
+    #contenedor_equipo_dos .item{
+        width: 38vw;
+    }
+    
+    #contenedor_equipo_dos .item .contenedor-imagen img{
+        width: 200px;
+    }
+}
 
