@@ -29,7 +29,7 @@ h1 {
 
 .introduccion-img {
   width: 100%;
-  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.75));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
   max-height: 100%;
   /* box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75); */
 }
@@ -71,7 +71,7 @@ h1 {
   text-align: center;
   font-size: 25px;
   color: #fff;
-  margin: 20px 0;  
+  margin: 20px 0;
 }
 
 .beneficios-list-item {
@@ -102,7 +102,7 @@ h1 {
 
 .beneficios-image {
   width: 100%;
-  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.75));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
 
   /* box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75); */
 }
@@ -125,13 +125,15 @@ h1 {
   width: 100%;
   margin-top: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
 
 .procesos-image {
   width: 100%;
-  box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 .procesos-li {
@@ -140,8 +142,7 @@ h1 {
   padding: 0 10px;
 }
 
-
-.cta{
+.cta {
   padding: 20px 30px;
   background-color: #f5f5f5;
 }
@@ -174,7 +175,7 @@ h1 {
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
@@ -185,10 +186,6 @@ h1 {
 .cta-button:hover {
   background-color: #0056b3;
 }
-
-
-
-
 
 .preguntas {
   width: 100%;
@@ -250,13 +247,11 @@ h1 {
     justify-content: space-evenly;
     padding: 30px;
     max-width: 95%;
-   
   }
 
   .introduccion-img-container {
     width: 100%;
   }
-
 
   .introduccion-text-container {
     width: 100%;
@@ -273,7 +268,6 @@ h1 {
     padding: 20px 50px;
     max-width: 100%;
   }
-
 
   .beneficios-container-items {
     display: grid;
@@ -325,9 +319,12 @@ h1 {
   }
 
   .procesos {
-    padding: 20px 60px 20px 50px;
     width: 100%;
-    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .procesos-title {
@@ -336,19 +333,15 @@ h1 {
   }
 
   .procesos-container-items {
-    display: flex;
-    flex-direction: row-reverse;
-    box-sizing: border-box;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
     gap: 30px;
   }
 
-  .procesos-text-container {
-    width: 50%;
+  .procesos-items {
     gap: 30px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .procesos-text {
@@ -365,11 +358,9 @@ h1 {
     font-size: 18px;
   }
 
-  .procesos-image-container {
-    width: 50%;
+  .procesos-items:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
   }
 
   .procesos-image {
@@ -412,7 +403,6 @@ h1 {
     width: 90%;
     font-size: 22px;
   }
-
 
   .preguntas-answer {
     margin-top: 15px;

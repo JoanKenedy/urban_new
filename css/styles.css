@@ -122,7 +122,6 @@ nav i {
   display: none;
 } */
 
-
 header {
   position: fixed;
   top: 0;
@@ -225,12 +224,11 @@ nav i {
   font-size: 35px;
   display: none !important;
 }
-#menu li{
+#menu li {
   padding-left: 20px;
-
 }
 
-#dropdown{
+#dropdown {
   width: 105px;
 }
 /*  */
@@ -779,8 +777,7 @@ a.seguro:hover {
   margin-right: 50px;
 }
 
-
-#doctores{
+#doctores {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 70px;
@@ -788,12 +785,12 @@ a.seguro:hover {
   background-color: #f3f3f3;
 }
 
-@media (min-width: 752px) and (max-width: 1424px){
-  #doctores{
-  padding-left: 5%;
-  padding-right: 5%;
+@media (min-width: 752px) and (max-width: 1424px) {
+  #doctores {
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  #doctores .especialidades{
+  #doctores .especialidades {
     justify-content: space-evenly;
   }
 }
@@ -1262,8 +1259,6 @@ a.seguro:hover {
   overflow-x: hidden;
   background-size: cover;
   background-attachment: fixed;
-
-
 }
 .parallax_dos p {
   color: #fff;
@@ -1496,7 +1491,9 @@ h6 {
   padding: 10px;
   border: none;
 }
-#tel, #direccion, #ciudad {
+#tel,
+#direccion,
+#ciudad {
   width: 49%;
   margin: 7px auto;
   padding: 10px;
@@ -1708,8 +1705,7 @@ footer {
 }
 
 .item_equipo_dos img {
-width: 8vw;
-
+  width: 8vw;
 }
 /*.item_promocion:nth-child(4){
   grid-column: 2/3;
@@ -2348,7 +2344,7 @@ width: 8vw;
   width: 90%;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .item-mision {
@@ -2481,7 +2477,7 @@ width: 8vw;
   width: 100% !important;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -2807,10 +2803,9 @@ a.ssolink {
 }
 
 @media (max-width: 967px) {
-
   /*FORMULARIO*/
 
-  #menu li{
+  #menu li {
     padding-left: 0;
   }
   .container-formulario-datos {
@@ -3710,23 +3705,22 @@ a.ssolink {
   }
   p.aos-init.aos-animate {
     font-size: 19px;
-}
-.parallax_dos .contenedor-parallax_dos .item{
-  display: flex;
-  justify-content: center;
-}
+  }
+  .parallax_dos .contenedor-parallax_dos .item {
+    display: flex;
+    justify-content: center;
+  }
 
-.parallax_dos .contenedor-parallax_dos .item img{
-  width: 220px;
-}
+  .parallax_dos .contenedor-parallax_dos .item img {
+    width: 220px;
+  }
 
-
-.parallax_dos .contenedor-parallax_dos .item a{
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.205);
-  padding: 12px;
-  border-radius: 10px;
-}
+  .parallax_dos .contenedor-parallax_dos .item a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 12px;
+    border-radius: 10px;
+  }
 
   .parallax_uno p {
     color: #fff;
@@ -3875,7 +3869,7 @@ a.ssolink {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
   }
- 
+
   .efecto_equipo h2 {
     text-align: center;
     color: #1161a0;
@@ -4590,7 +4584,7 @@ a.ssolink {
   padding-top: 30px;
 }
 
-#slide_contenedor .container-body-text .boton-ver-mas a{
+#slide_contenedor .container-body-text .boton-ver-mas a {
   background-color: #01a88f;
   color: white;
   text-decoration: none;
@@ -4599,7 +4593,6 @@ a.ssolink {
   text-align: center;
   width: 150px;
 }
-
 
 #slide_contenedor .container-body-text .boton-ver-mas a {
   display: inline-block; /* Asegura que los enlaces se comporten como botones */
@@ -4610,8 +4603,6 @@ a.ssolink {
   background-color: #00bea5;
   transform: scale(1.05);
 }
-
-
 
 #backToTop {
   display: none; /* Inicialmente oculto */
@@ -4641,40 +4632,37 @@ a.ssolink {
   transform: scale(1.1);
 }
 
-#slide_contenedor .container-text{
+#slide_contenedor .container-text {
   padding-left: 5%;
   padding-right: 5%;
   height: 85vh;
 }
 
-
-
-#slide_contenedor{
+#slide_contenedor {
   padding-top: 19px;
 }
 @media (min-width: 968px) {
-  #slide_contenedor{
+  #slide_contenedor {
     padding-top: 0px;
   }
-  
 }
 #slide_contenedor .miSlider img {
   width: 100%;
   height: 85vh;
 }
 
-#parallax_uno{
+#parallax_uno {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-#container-seguro{
+#container-seguro {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 30px;
 }
 
-#parallax_uno  p{
+#parallax_uno p {
   text-align: left;
   max-width: 1200px;
 }
@@ -4685,7 +4673,6 @@ a.ssolink {
   padding: 12px;
   border-radius: 10px;
 }
-
 
 .parallax_dos .contenedor-parallax_dos .item {
   display: flex;
@@ -4703,63 +4690,60 @@ a.ssolink {
   border-radius: 10px;
 }
 
-.contenedor-parallax_dos .item{
+.contenedor-parallax_dos .item {
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
 @media (min-width: 610px) and (max-width: 1110px) {
-
-  #doctores{
+  #doctores {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  #doctores .especialidades{
+  #doctores .especialidades {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
   }
-  #doctores .item-especialidades{
+  #doctores .item-especialidades {
     width: 210px;
     margin: 20px;
   }
 }
 
-#about-team .plaza-fashion-container{
+#about-team .plaza-fashion-container {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-
-#slider_marcas{
+#slider_marcas {
   background-color: #f3f3f3;
   padding-bottom: 30px;
 }
 
-#slider_marcas .efecto_uno h2{
+#slider_marcas .efecto_uno h2 {
   text-align: center;
 }
 
-#slider_marcas .efecto_uno{
+#slider_marcas .efecto_uno {
   padding-top: 30px;
 }
 
-.parallax_dos .contenedor-parallax_dos .item a{
+.parallax_dos .contenedor-parallax_dos .item a {
   transition: 0.3s ease-in-out;
 }
-.parallax_dos .contenedor-parallax_dos .item a:hover{
+.parallax_dos .contenedor-parallax_dos .item a:hover {
   transform: scale(1.1);
 }
 
-.contenedor_marcas{
+.contenedor_marcas {
   overflow-x: unset;
 }
 
-#parallax_uno{
+#parallax_uno {
   overflow-x: unset;
   display: flex;
   flex-direction: column;
@@ -4767,49 +4751,47 @@ a.ssolink {
   background-size: cover;
 }
 
-#parallax_uno .imagen img{
+#parallax_uno .imagen img {
   width: 200px;
 }
 
-.slider_marcas_dos{
+.slider_marcas_dos {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.slider_marcas_dos h2{
+.slider_marcas_dos h2 {
   text-align: center;
 }
 
-#ubicacion{
+#ubicacion {
   background-color: #f3f3f3;
 }
 
-#ubicacion .margenes{
+#ubicacion .margenes {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#ubicacion .contenedor-mapa{
+#ubicacion .contenedor-mapa {
   display: flex;
   justify-content: center;
 }
 
-#ubicacion .contenedor-mapa iframe{
+#ubicacion .contenedor-mapa iframe {
   width: 90%;
   height: 350px;
   border-radius: 10px;
   border: solid black 3px;
 }
 
-#ubicacion .texto h3{
+#ubicacion .texto h3 {
   text-align: center;
   font-size: 20px;
   padding-bottom: 20px;
 }
-
-
 
 /*----------------Nosotros HTML----------------------------*/
 #portada-nosotros .contenedor-portada {
@@ -4825,7 +4807,7 @@ a.ssolink {
   background-size: cover;
 }
 
-#portada-nosotros .contenedor-portada h2{
+#portada-nosotros .contenedor-portada h2 {
   color: white;
   font-size: 45px;
   text-align: center;
@@ -4834,133 +4816,127 @@ a.ssolink {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#extra h2{
+#extra h2 {
   text-align: center;
   color: #0000c6;
 }
 
-#extra{
+#extra {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#extra p{
+#extra p {
   text-align: left;
   font-size: 18px;
 }
 
-#equipo{
+#equipo {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#equipo .item_equipo .texto{
+#equipo .item_equipo .texto {
   padding: 30px;
 }
 
-#galeria_trabajo{
+#galeria_trabajo {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f3f3f3;
 }
 
-#mision .item-mision{
-    box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
+#mision .item-mision {
+  box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
 }
 
-#mision .item-mision p{
+#mision .item-mision p {
   max-width: 90%;
 }
 
-#mision{
+#mision {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 
 #equipo {
   overflow-x: unset;
 }
 
-
-#atencion{
+#atencion {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#atencion .menu_desplegable{
+#atencion .menu_desplegable {
   overflow-x: unset;
 }
 
-#atencion .btn_despega{
+#atencion .btn_despega {
   background-color: #0082c9;
   margin-top: 20px;
   box-shadow: 0 0 9px 3px rgb(0 0 0 / 17%);
 }
 
-#atencion .btn_despega h6{
+#atencion .btn_despega h6 {
   color: white;
 }
 
-#atencion .flecha{
+#atencion .flecha {
   color: white;
 }
 
-#atencion .sub_menu li{
+#atencion .sub_menu li {
   text-align: left;
 }
-
 
 /*----------------Nosotros HTML----------------------------*/
 
-
 /*-----------------Implantes HTML----------------------------*/
 
-
-#about-implantes{
+#about-implantes {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#about-implantes .item-about-implantes h2{
+#about-implantes .item-about-implantes h2 {
   text-align: center;
 }
-#about-implantes .item-about-implantes p{
+#about-implantes .item-about-implantes p {
   text-align: left;
 }
 
-#beneficios-implantes .seccion-ventajas-implantes{
+#beneficios-implantes .seccion-ventajas-implantes {
   padding-top: 50px;
   padding-top: 50px;
 }
 
-#beneficios-implantes .seccion-ventajas-implantes p{
+#beneficios-implantes .seccion-ventajas-implantes p {
   text-align: center;
 }
 
-#beneficios-implantes .seccion-ventajas-implantes li{
+#beneficios-implantes .seccion-ventajas-implantes li {
   text-align: left;
   padding-bottom: 20px;
 }
-#faq{
+#faq {
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-#faq .container-question h2{
+#faq .container-question h2 {
   padding-bottom: 30px;
 }
 
-#faq .container-question p{
+#faq .container-question p {
   text-align: left;
 }
 
-#galeria-implantes .galery-trabajo{
+#galeria-implantes .galery-trabajo {
   padding-bottom: 50px;
   padding-top: 50px;
   background-color: #0082c9;
 }
 /*-----------------Implantes HTML----------------------------*/
-
 
 /*-----------------Servicios HTML----------------------------*/
 #servicios-portada .imagen_fondo {
@@ -4971,7 +4947,6 @@ a.ssolink {
   margin: 0;
   padding: 0;
 }
-
 
 #portada-video {
   position: relative;
@@ -4990,7 +4965,8 @@ a.ssolink {
   z-index: -1; /* Hace que el video o imagen estén en el fondo */
 }
 
-video, .video-container img {
+video,
+.video-container img {
   object-fit: cover; /* Hace que la imagen o el video cubran toda el área */
   width: 100%;
   height: 100%;
@@ -5006,7 +4982,7 @@ video, .video-container img {
   z-index: 1;
 }
 
-#portada-video .contenido .img_fondo{
+#portada-video .contenido .img_fondo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5014,63 +4990,61 @@ video, .video-container img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#portada-video{
+#portada-video {
   background-color: rgba(0, 0, 0, 0.498);
 }
 
-.parallax_extra{
+.parallax_extra {
   margin-top: 0;
 }
 
-
-#servicios-paralax_extra{
+#servicios-paralax_extra {
   background-image: url(../imagenes/pacientes-unicos.jpg);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#especialidades_nosotros{
+#especialidades_nosotros {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-
-#contenedor_equipo_dos .item .contenedor-imagen{
+#contenedor_equipo_dos .item .contenedor-imagen {
   display: flex;
   justify-content: center;
 }
 
-#contenedor_equipo_dos .item .contenedor-imagen img{
+#contenedor_equipo_dos .item .contenedor-imagen img {
   width: 8vw;
 }
 
-#contenedor_equipo_dos .item{
+#contenedor_equipo_dos .item {
   background-color: rgb(233, 233, 233);
   width: 20vw;
   padding: 20px;
   margin: 10px;
 }
 
-#contenedor_equipo_dos .item p{
+#contenedor_equipo_dos .item p {
   text-align: left;
 }
 
-#contenedor_equipo_dos .item h5{
+#contenedor_equipo_dos .item h5 {
   text-align: center;
 }
 
-#contenedor_equipo_dos{
+#contenedor_equipo_dos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#servicios_about-team{
+#servicios_about-team {
   background-color: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#servicios-estudios{
+#servicios-estudios {
   padding-top: 50px;
   padding-bottom: 50px;
 }

@@ -21,14 +21,14 @@ h1 {
   padding: 30px 20px;
   width: 100%;
   position: relative;
-  background-image: url('../imagenes/casos/casos-fondo-1.webp');
+  background-image: url("../imagenes/casos/casos-fondo-1.webp");
   background-size: cover;
   background-position: top;
 }
 
 .introduccion::after {
-  content: '';
-  position: absolute; 
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -36,7 +36,6 @@ h1 {
   background-color: rgba(14, 71, 146, 0.63);
   z-index: 1;
 }
-
 
 .introduccion-text {
   position: relative;
@@ -67,14 +66,11 @@ h1 {
   justify-content: center;
 }
 
-
 .prev-videos:after,
 .next-videos:after {
   color: #fff !important;
   font-size: 30px !important;
 }
-
-
 
 .swiper-slide-video.swiper-slide-active {
   display: flex;
@@ -116,7 +112,7 @@ h1 {
 
 /*  */
 
-.cta{
+.cta {
   padding: 20px 30px;
   background-color: #f5f5f5;
 }
@@ -149,7 +145,7 @@ h1 {
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
@@ -161,10 +157,9 @@ h1 {
   background-color: #0056b3;
 }
 
-
 @media (min-width: 767px) {
   .titulos {
-    margin-top: 80px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,7 +198,7 @@ h1 {
     margin-bottom: 30px;
   }
 
-  .casos-slider{
+  .casos-slider {
     display: none !important;
   }
 
@@ -239,7 +234,6 @@ h1 {
     align-items: center;
   }
 
-
   .casos-item img {
     width: 100%;
     height: 100%;
@@ -266,8 +260,7 @@ h1 {
     background-image: url("../imagenes/casos/casos-6.webp");
   } */
 
-
-  .video-container{
+  .video-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -281,12 +274,9 @@ h1 {
   }
 
   .video-container video {
-
   }
-
 
   .cta-content p {
     width: 60%;
   }
-
 }
