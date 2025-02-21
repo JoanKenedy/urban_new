@@ -778,20 +778,14 @@ a.seguro:hover {
 }
 
 #doctores {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 70px;
-  padding-top: 50px;
   background-color: #f3f3f3;
+  padding: 20px 15px;
 }
 
 @media (min-width: 752px) and (max-width: 1424px) {
   #doctores {
     padding-left: 5%;
     padding-right: 5%;
-  }
-  #doctores .especialidades {
-    justify-content: space-evenly;
   }
 }
 
@@ -800,16 +794,17 @@ a.seguro:hover {
 }
 .doctores h2 {
   font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 30px 0px;
   text-align: center;
   text-transform: uppercase;
 }
 /*especialidades*/
 .especialidades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: auto;
+  width: 85%;
 }
 .item-especialidades {
   display: flex;
@@ -817,8 +812,7 @@ a.seguro:hover {
   align-items: center;
   flex-direction: column;
   background-color: #0082c9;
-  width: 220px;
-  height: 270px;
+  padding: 30px 40px;
   gap: 10px;
 }
 
@@ -3246,12 +3240,10 @@ a.ssolink {
   }
   /*especialidades*/
   .especialidades {
-    margin: 25px auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    width: 95%;
   }
   .item-especialidades {
     display: flex;
@@ -3259,9 +3251,7 @@ a.ssolink {
     align-items: center;
     flex-direction: column;
     background-color: #0082c9;
-    max-width: 400px;
     width: 100%;
-    margin-bottom: 20px;
   }
   .item-especialidades h3 {
     color: white;
