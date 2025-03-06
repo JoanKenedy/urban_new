@@ -1,106 +1,100 @@
 @media screen and (max-width: 425px) {
-    .seguro-btn{
-        font-size: 15px;
-    }
-    #parallax_uno p {
-        font-size: 15px;
-    }
-    .doctores h2{
-        font-size: 25px;
-    }
-    .agenda-btn{
-        font-size: 15px;
-    }
-    .sumate{
-        font-size: 35px;
-    }
+  .seguro-btn {
+    font-size: 15px;
+  }
+  #parallax_uno p {
+    font-size: 15px;
+  }
+  .doctores h2 {
+    font-size: 25px;
+  }
+  .agenda-btn {
+    font-size: 15px;
+  }
+  .sumate {
+    font-size: 35px;
+  }
 
-    #container-seguro .item-seguro h3{
-        font-size: 28px;
-    }
-    
-    .plaza-fashion-text {
-        font-size: 20px;
-    }
+  #container-seguro .item-seguro h3 {
+    font-size: 28px;
+  }
 
-    .about-team h2 {
-        font-size: 28px;
-    }
+  .plaza-fashion-text {
+    font-size: 20px;
+  }
 
-    .efecto_uno h2 {
-        font-size: 28px;
-    }
+  .about-team h2 {
+    font-size: 28px;
+  }
 
-    .item_footer span{
-        font-size: 13px;
-    }
+  .efecto_uno h2 {
+    font-size: 28px;
+  }
 
-    #portada-nosotros .contenedor-portada h2{
-        font-size: 26px;
-    }
+  .item_footer span {
+    font-size: 13px;
+  }
+
+  #portada-nosotros .contenedor-portada h2 {
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .item_footer span{
-        font-size: 13px;
-    }
-    #portada-nosotros .contenedor-portada h2{
-        font-size: 29px;
-    }
+  .item_footer span {
+    font-size: 13px;
+  }
+  #portada-nosotros .contenedor-portada h2 {
+    font-size: 29px;
+  }
 }
 
-
-@media screen and (min-width: 1200px){
-   nav{
+@media screen and (min-width: 1200px) {
+  nav {
     margin-left: 10%;
     margin-right: 10%;
-   }
+  }
 }
 
 @media screen and (max-width: 768px) {
-
-  #extra p{
+  #extra p {
     font-size: 15px;
   }
 }
 
-
 @media screen and (max-width: 967px) {
+  #extra p {
+    font-size: 15px;
+  }
 
-    #extra p{
-      font-size: 15px;
-    }
-
-    #equipo .item_equipo .texto{
-        padding: 10px;
-      }
+  #equipo .item_equipo .texto {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #contenedor_equipo_dos{
-        flex-direction: column;
-    }
-    #contenedor_equipo_dos .item{
-        width: 80vw;
-    }
+  #contenedor_equipo_dos {
+    flex-direction: column;
+  }
+  #contenedor_equipo_dos .item {
+    width: 80vw;
+  }
 
-    #contenedor_equipo_dos .item .contenedor-imagen img{
-        width: 150px;
-    }
+  #contenedor_equipo_dos .item .contenedor-imagen img {
+    width: 150px;
+  }
 
-    .item_equipo_dos{
-        height: 100%;
-    }
+  .item_equipo_dos {
+    height: 100%;
+  }
 }
 
+@media (min-width: 769px) and (max-width: 1450px) {
+  #contenedor_equipo_dos .item {
+    width: 38vw;
+  }
 
-@media (min-width: 769px) and (max-width: 1268px) {
-    #contenedor_equipo_dos .item{
-        width: 38vw;
-    }
-    
-    #contenedor_equipo_dos .item .contenedor-imagen img{
-        width: 200px;
-    }
+  #contenedor_equipo_dos .item .contenedor-imagen img {
+    width: 200px;
+  }
 }
-
