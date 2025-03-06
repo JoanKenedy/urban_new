@@ -1847,18 +1847,6 @@ footer {
 .item-container-team:nth-child(8) {
   grid-area: item8;
 }
-.item-container-team:nth-child(9) {
-  grid-area: item9;
-}
-.item-container-team:nth-child(10) {
-  grid-area: item10;
-}
-.item-container-team:nth-child(11) {
-  grid-area: item11;
-}
-.item-container-team:nth-child(12) {
-  grid-area: item12;
-}
 
 .item-container-team {
   overflow: hidden;
@@ -2702,6 +2690,30 @@ a.ssolink {
   }
 }
 
+#contenedor_equipo_dos {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+#contenedor_equipo_dos .item {
+  background-color: #d1cfce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+#contenedor_equipo_dos .item .contenedor-imagen {
+  text-align: center;
+}
+#contenedor_equipo_dos .item .contenedor-imagen img {
+  max-width: 50%;
+  text-align: center;
+}
 /* FORMULARIO*/
 @media (max-width: 1400px) {
   .logo_ortho {
@@ -2779,6 +2791,30 @@ a.ssolink {
   .item-especialidades:nth-child(5) {
     grid-column: 3/5;
     grid-row: 2;
+  }
+  #contenedor_equipo_dos {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  #contenedor_equipo_dos .item {
+    background-color: #d1cfce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  #contenedor_equipo_dos .item .contenedor-imagen {
+    text-align: center;
+  }
+  #contenedor_equipo_dos .item .contenedor-imagen img {
+    max-width: 50%;
+    text-align: center;
   }
 }
 /*Fin promociones modal*/
@@ -3876,18 +3912,6 @@ a.ssolink {
     font-size: 15px;
     color: #444444;
   }
-  .contenedor_equipo_dos {
-    width: 85%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto;
-    text-align: center;
-    grid-gap: 20px;
-    padding: 10px 0px;
-  }
-  .item_equipo_dos {
-    margin: 20px auto;
-  }
   .item_equipo:nth-child(1) h2 {
     color: #1161a0;
     font-size: 20px;
@@ -4376,15 +4400,7 @@ a.ssolink {
     margin: 0px auto;
     font-size: 16px;
   }
-  .contenedor_equipo_dos {
-    width: 85%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto;
-    text-align: center;
-    grid-gap: 10px;
-    padding: 10px 0px;
-  }
+
   .item_equipo_dos {
     margin: 10px auto;
     height: inherit;
@@ -4954,36 +4970,6 @@ video,
 #servicios-paralax_extra {
   background-image: url(../imagenes/pacientes-unicos.jpg);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-#contenedor_equipo_dos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 75%;
-  margin: auto;
-  padding-top: 20px;
-  gap: 12px;
-}
-#contenedor_equipo_dos .item {
-  background-color: #e2e0e0 !important;
-  padding: 10px 20px;
-  border-radius: 12px;
-}
-
-#contenedor_equipo_dos .item .contenedor-imagen {
-  display: flex;
-  justify-content: center;
-}
-
-#contenedor_equipo_dos .item .contenedor-imagen img {
-  width: 4vw;
-}
-
-#contenedor_equipo_dos .item p {
-  text-align: justify;
-}
-
-#contenedor_equipo_dos .item h5 {
-  text-align: center;
 }
 
 #servicios_about-team {
