@@ -2795,9 +2795,9 @@ a.ssolink {
   #contenedor_equipo_dos {
     width: 80%;
     margin: auto;
-    padding: 20px 0px;
+    padding: 15px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   #contenedor_equipo_dos .item {
@@ -2810,10 +2810,15 @@ a.ssolink {
     border-radius: 12px;
   }
   #contenedor_equipo_dos .item .contenedor-imagen {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #contenedor_equipo_dos .item .contenedor-imagen img {
-    max-width: 50%;
+    max-width: 40%;
+    text-align: center;
+  }
+  #contenedor_equipo_dos .item h5 {
     text-align: center;
   }
 }
@@ -4983,3 +4988,14 @@ video,
   padding-bottom: 50px;
 }
 /*-----------------Servicios HTML----------------------------*/
+
+@media (min-width: 1400px) {
+  #contenedor_equipo_dos {
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
